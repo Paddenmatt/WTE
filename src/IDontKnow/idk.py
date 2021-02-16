@@ -1,6 +1,8 @@
 ## ===========================================================================================================================
 ## FILE: idk.py
-##    DESCRIPTION: main driver file for the IDK food app
+##    DESCRIPTION: Main driver file for the IDK food application.
+##    DATE CREATED: 02/15/2021
+##    LAST UPDATED: 02/16/2021
 ##
 ## RUN THIS FILE: python3 idk.py
 ##    LANGUAGE: Python 3.9.1 --- 64-bit
