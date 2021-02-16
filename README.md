@@ -1,14 +1,17 @@
 # IDK
-SWE Project || Mobile Application Development || "What do you wanna eat?"
+SWE Project || Mobile Application Development || "What do you wanna eat?" || **"I don't know"**
 
 -----------------------------------
 
-## Group Members
-- Matthew Padden
-- Tommy Nguyen
-- Berkeley C. 
-- Brian Lucero
-- Bilal El-Haghassan
+## Team Members
+
+Name | Github Username
+------------ | -------------
+Matthew Padden | ...
+Tommy Nguyen | ...
+Berkeley C. | ...
+Brian Lucero | ...
+Bilal El-Haghassan | ...
 
 -----------------------------------
 
