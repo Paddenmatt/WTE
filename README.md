@@ -1,2 +1,2 @@
 # IDK
-SWE Project || Application Development || What to Eat?
+SWE Project || Mobile Application Development || What to Eat?
