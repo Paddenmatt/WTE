@@ -23,8 +23,11 @@ Bilal El-Haghassan | ...
 - [What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
 - [Discord Pins](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
 - [RESOURCE-URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#resource-urls)
-- [Stakeholders Diagram](resources/stakeholders-.png)
-- 
+- [Stakeholders Diagram](https://github.com/13rianlucero/IDK/blob/main/README.md#shareholders-diagram)
+- [Revision History](https://github.com/13rianlucero/IDK/blob/main/README.md#revision-history)
+- [Spring2021 1st iteration Spring2021](https://github.com/13rianlucero/IDK/blob/main/README.md#spring2021-1st-iteration-spring2021)
+- [TEAM CHARTER](https://github.com/13rianlucero/IDK/blob/main/README.md#team-charter)
+- [RESOURCE FILES](/resources)
 
 -----------------------------------
 
@@ -124,21 +127,24 @@ https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-ea
 -----------------------------------
 
 # Shareholders Diagram:
-
+![EC2E7AD9-2CE8-4C01-A370-8E996D2D447B](https://user-images.githubusercontent.com/47013770/108057020-e5a76680-7006-11eb-948d-e1c66bcf42a7.jpeg)
 
 -----------------------------------
 
 # Revision History:
-
+![6491C8CF-8E0F-4FEC-9A78-1D2FC72FB012](https://user-images.githubusercontent.com/47013770/108057034-e9d38400-7006-11eb-91b5-f6e33f8d1f66.jpeg)
 
 -----------------------------------
 
 # Spring2021 1st iteration Spring2021:
-
+![3499A38C-155B-4C1B-9B2F-6A8EB025E3B5](https://user-images.githubusercontent.com/47013770/108057052-f0fa9200-7006-11eb-89c1-de05bdaf22b1.jpeg)
 
 -----------------------------------
 
-# TEAM CHARTER:
-
+# TEAM CHARTER (template, for now):
+![0C67D746-9014-4637-8B73-FFB843DCFCE2](https://user-images.githubusercontent.com/47013770/108056955-d0cad300-7006-11eb-8707-2627336576f7.jpeg)
+![4F45120B-9929-47E4-8EE0-4C9B7A6847EB](https://user-images.githubusercontent.com/47013770/108056966-d45e5a00-7006-11eb-88e1-a005df423a14.jpeg)
+![CC8379ED-04E5-4BDB-8766-CC00CF300C70](https://user-images.githubusercontent.com/47013770/108056972-d7f1e100-7006-11eb-9772-1cb2bcba9a70.jpeg)
+![21E28E6E-AB1B-47C0-9040-2FAD4E4FCEAD](https://user-images.githubusercontent.com/47013770/108056989-db856800-7006-11eb-8b3b-f0ee880d3e02.jpeg)
 
 -----------------------------------
