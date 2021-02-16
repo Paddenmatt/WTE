@@ -133,7 +133,7 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-eat-app
 
 **Initial Board Setup:**
-
+![59508841-8CAC-4FB1-A255-19A0501C01EE_1_105_c](https://user-images.githubusercontent.com/47013770/108061222-dc20fd00-700c-11eb-88d3-467bb1d6c8a1.jpeg)
 
 -----------------------------------
 
