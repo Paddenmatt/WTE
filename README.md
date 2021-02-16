@@ -23,6 +23,8 @@ Bilal El-Haghassan | ...
 - [What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
 - [Discord Pins](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
 - [RESOURCE-URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#resource-urls)
+- [Stakeholders Diagram](resources/stakeholders-.png)
+- 
 
 -----------------------------------
 
