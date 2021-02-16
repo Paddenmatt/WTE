@@ -104,26 +104,9 @@ Content from cell 1 | Content from cell 2
 Content in the first column | Content in the second column
 
 - [] __**Start the design document**__ 
-
-> google doc containing the requirement questions (1-13 for this SWE class)
-
-- [x] __**Add everyone to a github repo (project code)**__ 
-
-> - each member of the team gets their own branch
-> - 3 types of branches
->    - 1 master branch (deployment, receives least amt of pull requests)
->    - 1 dev branch (the branch that each of us make pull requests on, master will take from this at end)
->    - 5 team member branches (each member gets their own, updating it often to match the dev branch)
->    - `Personally I think just ONE branch (Main) is needed for this project (Brian)`
-  
+- [x] __**Add everyone to a github repo (project code)**__ - `Personally I think just ONE branch (Main) is needed for this project (Brian)`
 - []__**Make an excel/google sheet, to log in code edits (documentation log)**__
-
-- []__**Team hangout/review the items above and learn how each of us will utilize them**__
-
-> - project manager leads this
-> - PM explains how to log in documentation on google sheet
-> -  how to properly commit/pull request/merge/use branches on github project repo
-> - how to make changes on the google design document
+- []__**Team hangout/review the items above and PM demonstrates to the team, how each of us will utilize mentioned items**__
 
 ### 2. Google Drive - Project Folder
 > https://drive.google.com/drive/folders/1SwFM_Ya4TDa_9Zz1c8VLGdhjxZkfuupU?usp=sharing
