@@ -14,18 +14,12 @@ SWE Project || Mobile Application Development || "What do you wanna eat?"
 
 # Contents:
 
-http://github.com - automatic!
-[GitHub](http://github.com)
-
-[One Page Summary](https://github.com/13rianlucero/IDK/blob/main/README.md#one-page-summary)
-
-[Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/IDK/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
-
-[What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
-
-[Discord Pins](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
-
-[RESOURCE-URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#resource-urls)
+- [One Page Summary](https://github.com/13rianlucero/IDK/blob/main/README.md#one-page-summary)
+- [Sample GUI](https://github.com/13rianlucero/IDK/blob/main/README.md#sample-gui)
+- [Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/IDK/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
+- [What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
+- [Discord Pins](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
+- [RESOURCE-URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#resource-urls)
 
 -----------------------------------
 
@@ -42,7 +36,7 @@ http://github.com - automatic!
   
 -----------------------------------
 
-# Example GUI:
+# Sample GUI:
 
 ![9902BDE6-C9B2-4F17-A876-9D85DAC39974](https://user-images.githubusercontent.com/47013770/108041006-d9b1a980-6ff2-11eb-928b-e50bfad817c7.jpeg)
 
