@@ -12,6 +12,23 @@ SWE Project || Mobile Application Development || "What do you wanna eat?"
 
 -----------------------------------
 
+# Contents:
+
+http://github.com - automatic!
+[GitHub](http://github.com)
+
+[One Page Summary](https://github.com/13rianlucero/IDK/blob/main/README.md#one-page-summary)
+
+[Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/IDK/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
+
+[What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
+
+[Discord Pins](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
+
+[RESOURCE-URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#resource-urls)
+
+-----------------------------------
+
 # One Page Summary
 
 ### Software App idea:
