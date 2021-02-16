@@ -42,11 +42,13 @@ http://github.com - automatic!
   
 -----------------------------------
 
+# Example GUI:
+
 ![9902BDE6-C9B2-4F17-A876-9D85DAC39974](https://user-images.githubusercontent.com/47013770/108041006-d9b1a980-6ff2-11eb-928b-e50bfad817c7.jpeg)
 
 -----------------------------------
 
-# **In this assignment, you will expand the idea... and narrow the ideas down…**
+# In this assignment, you will expand the idea... and narrow the ideas down…
 
 ## What kind of project is that?
 - App
@@ -65,7 +67,7 @@ http://github.com - automatic!
 
 -----------------------------------
 
-# ***What information do you need from your client?***
+# What information do you need from your client?
 Now, for today's activity, you ll assume that you are the end-user or you are interviewing the end-user and client to gather information, you can focus on:
 
 ## **What is your expectation from this software/project/application?** 
