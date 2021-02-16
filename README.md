@@ -1,5 +1,5 @@
 # IDK
-SWE Project || Mobile Application Development || What to Eat?
+SWE Project || Mobile Application Development || "What do you wanna eat?"
 
 ### Group Members
 - Matthew Padden
