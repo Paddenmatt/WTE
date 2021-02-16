@@ -11,7 +11,7 @@ Matthew Padden | Paddenmatt | paddenmatt@csu.fullerton.edu
 Tommy Nguyen | Tombom66 | nguyentommy66@csu.fullerton.edu
 Berkeley C. | BerkBork | berkeley@csu.fullerton.edu
 Brian Lucero | 13rianlucero | 13rianlucero@csu.fullerton.edu
-Bilal El-Haghassan | ... | bilalelhaghassan@csu.fullerton.edu
+Bilal El-Haghassan | belhaghassan | bilalelhaghassan@csu.fullerton.edu
 
 -----------------------------------
 
