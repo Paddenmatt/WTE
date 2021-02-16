@@ -75,3 +75,30 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 - To provide a service for people who are short on time and do not want to waste it deciding on what to eat.
 
 -----------------------------------
+
+## DISCORD PINS
+
+### 1. 
+> so in my swift class, to get started we had to:
+
+> **Start the design document**
+>      - google doc containing the requirement questions (1-13 for this SWE class)
+> **Add everyone to a github repo (project code)**
+>      - each member of the team gets their own branch
+>      - 3 types of branches
+>           - 1 master branch (deployment, receives least amt of pull requests)
+>           - 1 dev branch (the branch that each of us make pull requests on, master will take from this at end)
+>           - 5 team member branches (each member gets their own, updating it often to match the dev branch)
+> **Make an excel/google sheet, to log in code edits (documentation log)**
+> **Team hangout/review the items above and learn how each of us will utilize them**
+>      - project manager leads this
+>      - PM explains how to log in documentation on google sheet
+>      - how to properly commit/pull request/merge/use branches on github project repo
+>      - how to make changes on the google design document
+
+> this is a lot, i know, and we dont have to follow this. Just thought i'd mention it to help us have a starting point. dont gotta do all this today tho. In my class we were given like 2 weeks to get all this setup.
+
+### 2. 
+> https://drive.google.com/drive/folders/1SwFM_Ya4TDa_9Zz1c8VLGdhjxZkfuupU?usp=sharing
+
+-----------------------------------
