@@ -26,7 +26,6 @@ Bilal El-Haghassan | ...
 **Helpful Guidelines & Development-tool URLS**
 - [DISCORD PINS](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
    - `includes google drive link`
-   
 - [TRELLO BOARD](https://github.com/13rianlucero/IDK/blob/main/README.md#trello-board)
 - [PROJECT RESEARCH URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#project-research-urls)
 
