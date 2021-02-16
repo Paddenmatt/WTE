@@ -127,7 +127,7 @@ https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-ea
 
 -----------------------------------
 
-# Shareholders Diagram:
+# Stakeholders Diagram:
 ![EC2E7AD9-2CE8-4C01-A370-8E996D2D447B](https://user-images.githubusercontent.com/47013770/108057020-e5a76680-7006-11eb-948d-e1c66bcf42a7.jpeg)
 
 -----------------------------------
