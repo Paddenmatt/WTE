@@ -36,7 +36,7 @@ Bilal El-Haghassan | ...
 
 **Project Requirement File Previews**
 - [Spring2021 1st iteration Spring2021](https://github.com/13rianlucero/IDK/blob/main/README.md#spring2021-1st-iteration-spring2021)
-- [TEAM CHARTER](https://github.com/13rianlucero/IDK/blob/main/README.md#team-charter)
+- [TEAM CHARTER](https://github.com/13rianlucero/IDK/blob/main/README.md#team-charter-template-for-now)
 
 **Shortcut to File(s)**
 - [RESOURCE FILES](/resources)
