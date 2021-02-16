@@ -31,7 +31,7 @@ Bilal El-Haghassan | ...
 - [PROJECT RESEARCH URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#project-research-urls)
 
 **Diagrams**
-- [Stakeholders Diagram](https://github.com/13rianlucero/IDK/blob/main/README.md#shareholders-diagram)
+- [Stakeholders Diagram](https://github.com/13rianlucero/IDK/blob/main/README.md#stakeholders-diagram)
 - [Revision History](https://github.com/13rianlucero/IDK/blob/main/README.md#revision-history)
 
 **Project Requirement File Previews**
