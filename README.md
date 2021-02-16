@@ -1,13 +1,17 @@
 # IDK
 SWE Project || Mobile Application Development || "What do you wanna eat?"
 
-### Group Members
+-----------------------------------
+
+## Group Members
 - Matthew Padden
 - Tommy Nguyen
 - Berkeley C. 
 - Brian Lucero
 - Bilal El-Haghassan
+
 -----------------------------------
+
 # One Page Summary
 
 ### Software App idea:
@@ -17,10 +21,14 @@ SWE Project || Mobile Application Development || "What do you wanna eat?"
 
    Our first five features we will be focusing on in the first phase of development will be our decision tree diagram that leads the user to the result, having the time affect what meal type is suggested, an “I don’t know” button for those who are truly indecisive and can’t choose between the options provided, an initial option of choosing to eat in or out which affects the current branch, implementing a user class, and a way to record the foods that our user interacts with the most to be in a suggestion list.
 
-   Our clients who are using our app are those who are indecisive, hungry, and short on time. Our app will be available for mobile devices which will allow our users to access it on the go. This app will also provide users who are unfamiliar with the area a tailored list of food options for them to eat at with directions to help them get there. The application will be a mobile application and accessed internally.
+  Our clients who are using our app are those who are indecisive, hungry, and short on time. Our app will be available for mobile devices which will allow our users to access it on the go. This app will also provide users who are unfamiliar with the area a tailored list of food options for them to eat at with directions to help them get there. The application will be a mobile application and accessed internally.
+  
 -----------------------------------
+
 ![9902BDE6-C9B2-4F17-A876-9D85DAC39974](https://user-images.githubusercontent.com/47013770/108041006-d9b1a980-6ff2-11eb-928b-e50bfad817c7.jpeg)
+
 -----------------------------------
+
 # **In this assignment, you will expand the idea... and narrow the ideas down…**
 
 ## What kind of project is that?
@@ -37,7 +45,9 @@ SWE Project || Mobile Application Development || "What do you wanna eat?"
 
 ## Why this project? 
 - We want to help those who have trouble deciding what to eat find food and be saved
+
 -----------------------------------
+
 # ***What information do you need from your client?***
 Now, for today's activity, you ll assume that you are the end-user or you are interviewing the end-user and client to gather information, you can focus on:
 
@@ -66,7 +76,9 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 
 ## **What is the goal of this project?**
 - To provide a service for people who are short on time and do not want to waste it deciding on what to eat.
+
 -----------------------------------
+
 # DISCORD PINS
 
 ### 1. Paul Inventado's Swift Programming class - Initial Guidance
@@ -81,8 +93,7 @@ __**Add everyone to a github repo (project code)**__
 >    - 1 master branch (deployment, receives least amt of pull requests)
 >    - 1 dev branch (the branch that each of us make pull requests on, master will take from this at end)
 >    - 5 team member branches (each member gets their own, updating it often to match the dev branch)
-
-`Personally I think just ONE branch(MAIN) is needed for this project`
+>    - `Personally I think just ONE branch (Main) is needed for this project (Brian)`
   
 __**Make an excel/google sheet, to log in code edits (documentation log)**__
 
@@ -94,4 +105,14 @@ __**Team hangout/review the items above and learn how each of us will utilize th
 
 ### 2. Google Drive - Project Folder
 > https://drive.google.com/drive/folders/1SwFM_Ya4TDa_9Zz1c8VLGdhjxZkfuupU?usp=sharing
+
+-----------------------------------
+
+# RESOURCE-URLS
+
+## Python Mobile Development: When And Why to Build Your App With Python?
+https://www.ideamotive.co/blog/python-mobile-development-when-and-why-to-build-your-app-with-python
+
+## (...)
+
 -----------------------------------
