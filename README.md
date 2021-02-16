@@ -17,18 +17,30 @@ Bilal El-Haghassan | ...
 
 # Contents:
 
+**Application Description & Team Planning**
 - [One Page Summary](https://github.com/13rianlucero/IDK/blob/main/README.md#one-page-summary)
 - [Sample GUI](https://github.com/13rianlucero/IDK/blob/main/README.md#sample-gui)
 - [Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/IDK/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
 - [What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
+
+**Helpful Guidelines & Development-tool URLS**
 - [DISCORD PINS](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
+   - `includes google drive link`
+   
+- [TRELLO BOARD](https://github.com/13rianlucero/IDK/blob/main/README.md#trello-board)
 - [PROJECT RESEARCH URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#project-research-urls)
+
+**Diagrams**
 - [Stakeholders Diagram](https://github.com/13rianlucero/IDK/blob/main/README.md#shareholders-diagram)
 - [Revision History](https://github.com/13rianlucero/IDK/blob/main/README.md#revision-history)
+
+**Project Requirement File Previews**
 - [Spring2021 1st iteration Spring2021](https://github.com/13rianlucero/IDK/blob/main/README.md#spring2021-1st-iteration-spring2021)
 - [TEAM CHARTER](https://github.com/13rianlucero/IDK/blob/main/README.md#team-charter)
+
+**Shortcut to File(s)**
 - [RESOURCE FILES](/resources)
-- [Driver File](src/IDontKnow/idk.py)
+- [DRIVER FILE](src/IDontKnow/idk.py)
 
 -----------------------------------
 
@@ -101,7 +113,7 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 
 -----------------------------------
 
-# DISCORD PINS
+# DISCORD PINS:
 
 ### 1. Paul Inventado's Swift Programming class - Initial Guidance
 
@@ -115,13 +127,20 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 
 -----------------------------------
 
-# PROJECT RESEARCH URLS
+# TRELLO BOARD:
+
+**Trello Board URL:**
+https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-eat-app
+
+**Initial Board Setup:**
+
+
+-----------------------------------
+
+# PROJECT RESEARCH URLS:
 
 ## Python Mobile Development: When And Why to Build Your App With Python?
 https://www.ideamotive.co/blog/python-mobile-development-when-and-why-to-build-your-app-with-python
-
-## Trello Board
-https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-eat-app
 
 ## (...)
 
