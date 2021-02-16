@@ -7,9 +7,9 @@ SWE Project || Mobile Application Development || "What do you wanna eat?" || **"
 
 Name | Github Username | Email
 ------------ | ------------- | ------------- 
-Matthew Padden | ... | paddenmatt@csu.fullerton.edu
-Tommy Nguyen | ... | nguyentommy66@csu.fullerton.edu
-Berkeley C. | ... | berkeley@csu.fullerton.edu
+Matthew Padden | Paddenmatt | paddenmatt@csu.fullerton.edu
+Tommy Nguyen | Tombom66 | nguyentommy66@csu.fullerton.edu
+Berkeley C. | BerkBork | berkeley@csu.fullerton.edu
 Brian Lucero | 13rianlucero | 13rianlucero@csu.fullerton.edu
 Bilal El-Haghassan | ... | bilalelhaghassan@csu.fullerton.edu
 
