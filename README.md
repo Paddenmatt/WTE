@@ -45,7 +45,7 @@ SWE Project || Mobile Application Development || "What do you wanna eat?"
 # In this assignment, you will expand the idea... and narrow the ideas down…
 
 ## What kind of project is that?
-- App
+App
 
 ## What is the programming language you need to know? 
 - C++
@@ -54,10 +54,10 @@ SWE Project || Mobile Application Development || "What do you wanna eat?"
 - Python
 
 ## How is the GUI? (sketches)
-- https://docs.google.com/drawings/d/19ZmZmesrbhwjii9KatCmCRinIuV1BcAWpwgcPGW1G8M/edit?usp=sharing
+https://docs.google.com/drawings/d/19ZmZmesrbhwjii9KatCmCRinIuV1BcAWpwgcPGW1G8M/edit?usp=sharing
 
 ## Why this project? 
-- We want to help those who have trouble deciding what to eat find food and be saved
+We want to help those who have trouble deciding what to eat find food and be saved
 
 -----------------------------------
 
@@ -97,10 +97,18 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 ### 1. Paul Inventado's Swift Programming class - Initial Guidance
 > so in my swift class, to get started we had to:
 
-__**Start the design document**__
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+- [] __**Start the design document**__ 
+
 > google doc containing the requirement questions (1-13 for this SWE class)
 
-__**Add everyone to a github repo (project code)**__
+- [x] __**Add everyone to a github repo (project code)**__ 
+
 > - each member of the team gets their own branch
 > - 3 types of branches
 >    - 1 master branch (deployment, receives least amt of pull requests)
@@ -108,9 +116,10 @@ __**Add everyone to a github repo (project code)**__
 >    - 5 team member branches (each member gets their own, updating it often to match the dev branch)
 >    - `Personally I think just ONE branch (Main) is needed for this project (Brian)`
   
-__**Make an excel/google sheet, to log in code edits (documentation log)**__
+- []__**Make an excel/google sheet, to log in code edits (documentation log)**__
 
-__**Team hangout/review the items above and learn how each of us will utilize them**__
+- []__**Team hangout/review the items above and learn how each of us will utilize them**__
+
 > - project manager leads this
 > - PM explains how to log in documentation on google sheet
 > -  how to properly commit/pull request/merge/use branches on github project repo
@@ -125,6 +134,9 @@ __**Team hangout/review the items above and learn how each of us will utilize th
 
 ## Python Mobile Development: When And Why to Build Your App With Python?
 https://www.ideamotive.co/blog/python-mobile-development-when-and-why-to-build-your-app-with-python
+
+## Trello Board
+https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-eat-app
 
 ## (...)
 
