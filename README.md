@@ -5,13 +5,13 @@ SWE Project || Mobile Application Development || "What do you wanna eat?" || **"
 
 ## Team Members
 
-Name | Github Username
------------- | -------------
-Matthew Padden | ...
-Tommy Nguyen | ...
-Berkeley C. | ...
-Brian Lucero | 13rianlucero
-Bilal El-Haghassan | ...
+Name | Github Username | Email
+------------ | ------------- | ------------- 
+Matthew Padden | ... | paddenmatt@csu.fullerton.edu
+Tommy Nguyen | ... | nguyentommy66@csu.fullerton.edu
+Berkeley C. | ... | berkeley@csu.fullerton.edu
+Brian Lucero | 13rianlucero | 13rianlucero@csu.fullerton.edu
+Bilal El-Haghassan | ... | bilalelhaghassan@csu.fullerton.edu
 
 -----------------------------------
 
