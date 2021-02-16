@@ -21,13 +21,14 @@ Bilal El-Haghassan | ...
 - [Sample GUI](https://github.com/13rianlucero/IDK/blob/main/README.md#sample-gui)
 - [Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/IDK/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
 - [What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
-- [Discord Pins](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
-- [RESOURCE-URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#resource-urls)
+- [DISCORD PINS](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
+- [PROJECT RESEARCH URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#project-research-urls)
 - [Stakeholders Diagram](https://github.com/13rianlucero/IDK/blob/main/README.md#shareholders-diagram)
 - [Revision History](https://github.com/13rianlucero/IDK/blob/main/README.md#revision-history)
 - [Spring2021 1st iteration Spring2021](https://github.com/13rianlucero/IDK/blob/main/README.md#spring2021-1st-iteration-spring2021)
 - [TEAM CHARTER](https://github.com/13rianlucero/IDK/blob/main/README.md#team-charter)
 - [RESOURCE FILES](/resources)
+- [Driver File](src/IDontKnow/idk.py)
 
 -----------------------------------
 
@@ -114,7 +115,7 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 
 -----------------------------------
 
-# RESOURCE-URLS
+# PROJECT RESEARCH URLS
 
 ## Python Mobile Development: When And Why to Build Your App With Python?
 https://www.ideamotive.co/blog/python-mobile-development-when-and-why-to-build-your-app-with-python
