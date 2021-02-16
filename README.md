@@ -96,10 +96,10 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 
 ### 1. Paul Inventado's Swift Programming class - Initial Guidance
 
-[ ] - __**Start the design document**__ 
-[x] - __**Add everyone to a github repo (project code)**__ - `Personally I think just ONE branch (Main) is needed for this project (Brian)`
-[ ] - __**Make an excel/google sheet, to log in code edits (documentation log)**__
-[ ] - _**Team hangout/review the items above and PM demonstrates to the team, how each of us will utilize mentioned items**__
+- [ ] - __**Start the design document**__ 
+- [x] - __**Add everyone to a github repo (project code)**__ - `Personally I think just ONE branch (Main) is needed for this project (Brian)`
+- [ ] - __**Make an excel/google sheet, to log in code edits (documentation log)**__
+- [ ] - _**Team hangout/review the items above and PM demonstrates to the team, how each of us will utilize mentioned items**__
 
 ### 2. Google Drive - Project Folder
 > https://drive.google.com/drive/folders/1SwFM_Ya4TDa_9Zz1c8VLGdhjxZkfuupU?usp=sharing
