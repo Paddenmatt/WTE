@@ -78,9 +78,11 @@ __**Start the design document**__
 __**Add everyone to a github repo (project code)**__
 > - each member of the team gets their own branch
 > - 3 types of branches
->  - 1 master branch (deployment, receives least amt of pull requests)
->  - 1 dev branch (the branch that each of us make pull requests on, master will take from this at end)
->  - 5 team member branches (each member gets their own, updating it often to match the dev branch)
+>    - 1 master branch (deployment, receives least amt of pull requests)
+>    - 1 dev branch (the branch that each of us make pull requests on, master will take from this at end)
+>    - 5 team member branches (each member gets their own, updating it often to match the dev branch)
+
+`Personally I think just ONE branch(MAIN) is needed for this project`
   
 __**Make an excel/google sheet, to log in code edits (documentation log)**__
 
