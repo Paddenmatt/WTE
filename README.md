@@ -1,5 +1,5 @@
-# IDK
-SWE Project || Mobile Application Development || "What do you wanna eat?" || **"I don't know"**
+# WTE
+SWE Project || Mobile Application Development || "What to eat?" || **"I don't know"**
 
 -----------------------------------
 
@@ -18,28 +18,28 @@ Bilal El-Haghassan | belhaghassan | bilalelhaghassan@csu.fullerton.edu
 # Contents:
 
 **Application Description & Team Planning**
-- [One Page Summary](https://github.com/13rianlucero/IDK/blob/main/README.md#one-page-summary)
-- [Sample GUI](https://github.com/13rianlucero/IDK/blob/main/README.md#sample-gui)
-- [Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/IDK/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
-- [What information do you need from the client?](https://github.com/13rianlucero/IDK/blob/main/README.md#what-information-do-you-need-from-your-client)
+- [One Page Summary](https://github.com/13rianlucero/WTE/blob/main/README.md#one-page-summary)
+- [Sample GUI](https://github.com/13rianlucero/WTE/blob/main/README.md#sample-gui)
+- [Expand the Idea, Narrow the Ideas down](https://github.com/13rianlucero/WTE/blob/main/README.md#in-this-assignment-you-will-expand-the-idea-and-narrow-the-ideas-down)
+- [What information do you need from the client?](https://github.com/13rianlucero/WTE/blob/main/README.md#what-information-do-you-need-from-your-client)
 
 **Helpful Guidelines & Development-tool URLS**
-- [DISCORD PINS](https://github.com/13rianlucero/IDK/blob/main/README.md#discord-pins)
+- [DISCORD PINS](https://github.com/13rianlucero/WTE/blob/main/README.md#discord-pins)
    - `includes google drive link`
-- [TRELLO BOARD](https://github.com/13rianlucero/IDK/blob/main/README.md#trello-board)
-- [PROJECT RESEARCH URLS](https://github.com/13rianlucero/IDK/blob/main/README.md#project-research-urls)
+- [TRELLO BOARD](https://github.com/13rianlucero/WTE/blob/main/README.md#trello-board)
+- [PROJECT RESEARCH URLS](https://github.com/13rianlucero/WTE/blob/main/README.md#project-research-urls)
 
 **Diagrams**
-- [Stakeholders Diagram](https://github.com/13rianlucero/IDK/blob/main/README.md#stakeholders-diagram)
-- [Revision History](https://github.com/13rianlucero/IDK/blob/main/README.md#revision-history)
+- [Stakeholders Diagram](https://github.com/13rianlucero/WTE/blob/main/README.md#stakeholders-diagram)
+- [Revision History](https://github.com/13rianlucero/WTE/blob/main/README.md#revision-history)
 
 **Project Requirement File Previews**
-- [Spring2021 1st iteration Spring2021](https://github.com/13rianlucero/IDK/blob/main/README.md#spring2021-1st-iteration-spring2021)
-- [TEAM CHARTER](https://github.com/13rianlucero/IDK/blob/main/README.md#team-charter-template-for-now)
+- [Spring2021 1st iteration Spring2021](https://github.com/13rianlucero/WTE/blob/main/README.md#spring2021-1st-iteration-spring2021)
+- [TEAM CHARTER](https://github.com/13rianlucero/WTE/blob/main/README.md#team-charter-template-for-now)
 
 **Shortcut to File(s)**
 - [RESOURCE FILES](/resources)
-- [DRIVER FILE](src/IDontKnow/idk.py)
+- [DRIVER FILE](src/IDontKnow/wte.py)
 
 -----------------------------------
 
