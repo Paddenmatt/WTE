@@ -134,6 +134,9 @@ https://trello.com/invite/b/ERZ8gesk/0278561ea97938487e1f2e2639143c9b/what-to-ea
 **Initial Board Setup:**
 ![59508841-8CAC-4FB1-A255-19A0501C01EE_1_105_c](https://user-images.githubusercontent.com/47013770/108061222-dc20fd00-700c-11eb-88d3-467bb1d6c8a1.jpeg)
 
+**User Reviews:**
+![F7CFEBDB-6E2F-4396-9A35-04ADFB8AA8C0_1_105_c](https://user-images.githubusercontent.com/47013770/108142026-cc8bcd80-7079-11eb-92dd-12eec7ac7725.jpeg)
+
 -----------------------------------
 
 # PROJECT RESEARCH URLS:
