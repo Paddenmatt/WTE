@@ -46,7 +46,7 @@ Bilal El-Haghassan | belhaghassan | bilalelhaghassan@csu.fullerton.edu
 # One Page Summary
 
 ### Software App idea:
-**I Don’t Know** - **IDK**
+**What to Eat?** - **WTE**
 
    We will be developing a mobile device application written primarily in C++. Our app, “I Don’t Know” will help indecisive users decide on what to eat.  Our expectation for this app is to limit the user from the thousands of options presented to them at once when they search for options to eat on Yelp or Google. Our app will provide a simple UI for easy navigation. It will ask a few simple questions on what type of food you may be interested in at the time utilizing mostly pictures to minimize brain power. The answered questions will narrow down the options automatically for the user and present them 2-3 food options tailored to how they answered the previous questions. After the user makes their decision based on the app’s tailored options, it will be able to provide them with directions to the location they chose.
 
@@ -116,7 +116,7 @@ Now, for today's activity, you ll assume that you are the end-user or you are in
 
 ### 1. Initial Guidance
 
-- [ ] - __**Start the design document**__ 
+- [x] - __**Start the design document**__ 
 - [x] - __**Add everyone to a github repo (project code)**__ - `Personally I think just the Main branch is good enough (Brian)`
 - [ ] - __**Make an excel/google sheet, to log in code edits (documentation log)**__
 - [ ] - _**Team hangout/review the items above and PM demonstrates to the team, how each of us will utilize mentioned items**__
