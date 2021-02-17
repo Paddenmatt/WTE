@@ -1,10 +1,10 @@
 ## ===========================================================================================================================
-## FILE: idk.py
-##    DESCRIPTION: Main driver file for the IDK food application.
+## FILE: wte.py
+##    DESCRIPTION: Main driver file for the WTE food application.
 ##    DATE CREATED: 02/15/2021
 ##    LAST UPDATED: 02/16/2021
 ##
-## RUN THIS FILE: python3 idk.py
+## RUN THIS FILE: python3 wte.py
 ##    LANGUAGE: Python 3.9.1 --- 64-bit
 ##
 ## Copyright (C) 2021  Brian Lucero, Berkeley C., Bilal El-Haghassan, Matthew Padden, Tommy Nguyen
