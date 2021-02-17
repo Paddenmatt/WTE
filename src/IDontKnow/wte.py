@@ -1,6 +1,7 @@
 ## ===========================================================================================================================
-## FILE: wte.py
+## FILE: wte.py 
 ##    DESCRIPTION: Main driver file for the WTE food application.
+##    NOTE: "wte" - short for "What to Eat?"
 ##    DATE CREATED: 02/15/2021
 ##    LAST UPDATED: 02/16/2021
 ##
