@@ -80,9 +80,17 @@ Builder.load_string("""
         halign: 'center'
     MDRectangleFlatButton:
         text: 'Start Over'
-        pos_hint: {'center_x':0.5,'center_y':0.1}
+        pos_hint: {'center_x':0.7,'center_y':0.1}
         on_press: 
             root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.3,'center_y':0.1}
+        on_press: 
+            root.manager.current = 'diningOption'
             root.manager.transition.direction = "right"
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
