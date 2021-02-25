@@ -24,18 +24,52 @@ Builder.load_string("""
 
 <DiningOptionScreen>:
     name: 'diningOption'
+    Image:
+        source: "images/dining.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/cooking.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+        
     MDRectangleFlatButton:
         text: 'Dining Out'
-        pos_hint: {'center_x':0.3,'center_y':0.5}
+        pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
             root.manager.current = 'option1'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Cook at Home'
-        pos_hint: {'center_x':0.7,'center_y':0.5}
+        pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
             root.manager.current = 'cooking'
             root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "I Don't Know"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press: 
+            root.manager.current = 'option1'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.5,'center_y':0.1}
+        on_press: 
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+            
             
 <CookingScreen>:
     name: 'cooking'
@@ -103,15 +137,34 @@ Builder.load_string("""
             
 <Option2Screen>:
     name: 'option2'
+    Image:
+        source: "images/healthy.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/unhealthy.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+        
     MDRectangleFlatButton:
-        text: 'Left Option'
-        pos_hint: {'center_x':0.3,'center_y':0.3}
+        text: 'Healthy'
+        pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
             root.manager.current = 'option3'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
-        text: 'Right Option'
-        pos_hint: {'center_x':0.7,'center_y':0.3}
+        text: 'Casual'
+        pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
             root.manager.current = 'option3'
             root.manager.transition.direction = "left"
@@ -132,15 +185,34 @@ Builder.load_string("""
             
 <Option3Screen>:
     name: 'option3'
+    Image:
+        source: "images/light.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/full.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+        
     MDRectangleFlatButton:
-        text: 'Left Option'
-        pos_hint: {'center_x':0.3,'center_y':0.3}
+        text: 'Light'
+        pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
             root.manager.current = 'option4'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
-        text: 'Right Option'
-        pos_hint: {'center_x':0.7,'center_y':0.3}
+        text: 'Full'
+        pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
             root.manager.current = 'option4'
             root.manager.transition.direction = "left"
@@ -165,19 +237,19 @@ Builder.load_string("""
         text: 'Left Option'
         pos_hint: {'center_x':0.3,'center_y':0.3}
         on_press: 
-            root.manager.current = 'option5'
+            root.manager.current = 'decision'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Right Option'
         pos_hint: {'center_x':0.7,'center_y':0.3}
         on_press: 
-            root.manager.current = 'option5'
+            root.manager.current = 'decision'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: "I Don't Know"
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press: 
-            root.manager.current = 'option5'
+            root.manager.current = 'decision'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Start Over'
@@ -188,17 +260,14 @@ Builder.load_string("""
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
             
-<Option5Screen>:
-    name: 'option5'
-    MDRectangleFlatButton:
-        text: 'Left Option'
-        pos_hint: {'center_x':0.3,'center_y':0.3}
-    MDRectangleFlatButton:
-        text: 'Right Option'
-        pos_hint: {'center_x':0.7,'center_y':0.3}
-    MDRectangleFlatButton:
-        text: "I Don't Know"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
+<DecisionScreen>:
+    name: 'decision'
+    MDLabel:
+        text: "Here's what we think you will like:"
+        theme_text_color: 'Custom'
+        pos_hint: {'center_x':0.5,'center_y':0.8}
+        text_color: (1, 1, 1, 1)
+        halign: 'center'
     MDRectangleFlatButton:
         text: 'Start Over'
         pos_hint: {'center_x':0.5,'center_y':0.1}
@@ -239,12 +308,8 @@ class Option4Screen(Screen):
     pass
 
 
-class Option5Screen(Screen):
+class DecisionScreen(Screen):
     pass
-
-
-
-
 
 
 class What2EatApp(MDApp):
@@ -259,10 +324,10 @@ class What2EatApp(MDApp):
         sm.add_widget(Option2Screen(name='option2'))
         sm.add_widget(Option3Screen(name='option3'))
         sm.add_widget(Option4Screen(name='option4'))
-        sm.add_widget(Option5Screen(name='option5'))
+        sm.add_widget(DecisionScreen(name='decision'))
 
         self.theme_cls.theme_style = "Dark"
-        
+
         return sm
 
 
