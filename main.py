@@ -1,7 +1,7 @@
 from kivymd.app import MDApp
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from kivy.uix.image import Image, AsyncImage
+import random
 
 Builder.load_string("""
     
@@ -19,11 +19,11 @@ Builder.load_string("""
         md_bg_color: (1, 0.65, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press: 
-            root.manager.current = 'diningOption'
+            root.manager.current = 'option1'
             root.manager.transition.direction = "left"
 
-<DiningOptionScreen>:
-    name: 'diningOption'
+<Option1Screen>:
+    name: 'option1'
     Image:
         source: "images/dining.jpg"
         pos_hint: {'center_x':0.3,'center_y':0.65}
@@ -47,19 +47,22 @@ Builder.load_string("""
         text: 'Dining Out'
         pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option1'
+            app.dining_press()
+            root.manager.current = 'option2'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Cook at Home'
         pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
-            root.manager.current = 'cooking'
+            app.cooking_press()
+            root.manager.current = 'option2'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: "I Don't Know"
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press: 
-            root.manager.current = 'option1'
+            app.opt1_rand()
+            root.manager.current = 'option2'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Start Over'
@@ -69,34 +72,9 @@ Builder.load_string("""
             root.manager.transition.direction = "right"
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
-            
-            
-<CookingScreen>:
-    name: 'cooking'
-    MDLabel:
-        text: 'Recipes'
-        theme_text_color: 'Custom'
-        text_color: (1, 1, 1, 1)
-        halign: 'center'
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'diningOption'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
-<Option1Screen>:
-    name: 'option1'
+<Option2Screen>:
+    name: 'option2'
     Image:
         source: "images/sweet.jpg"
         pos_hint: {'center_x':0.3,'center_y':0.65}
@@ -120,19 +98,22 @@ Builder.load_string("""
         text: 'Sweet'
         pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option2'
+            app.sweet_press()
+            root.manager.current = 'option3'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Salty'
         pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option2'
+            app.salty_press()
+            root.manager.current = 'option3'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: "I Don't Know"
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press: 
-            root.manager.current = 'option2'
+            app.opt2_rand()
+            root.manager.current = 'option3'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Start Over'
@@ -143,8 +124,8 @@ Builder.load_string("""
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
             
-<Option2Screen>:
-    name: 'option2'
+<Option3Screen>:
+    name: 'option3'
     Image:
         source: "images/healthy.jpg"
         pos_hint: {'center_x':0.3,'center_y':0.65}
@@ -168,19 +149,22 @@ Builder.load_string("""
         text: 'Healthy'
         pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option3'
+            app.healthy_press()
+            root.manager.current = 'option4'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Casual'
         pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option3'
+            app.casual_press()
+            root.manager.current = 'option4'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: "I Don't Know"
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press: 
-            root.manager.current = 'option3'
+            app.opt3_rand()
+            root.manager.current = 'option4'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Start Over'
@@ -191,8 +175,8 @@ Builder.load_string("""
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
             
-<Option3Screen>:
-    name: 'option3'
+<Option4Screen>:
+    name: 'option4'
     Image:
         source: "images/light.jpg"
         pos_hint: {'center_x':0.3,'center_y':0.65}
@@ -216,19 +200,22 @@ Builder.load_string("""
         text: 'Light'
         pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option4'
+            app.light_press()
+            root.manager.current = 'option5'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
-        text: 'Full'
+        text: 'Heavy'
         pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press: 
-            root.manager.current = 'option4'
+            app.heavy_press()
+            root.manager.current = 'option5'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: "I Don't Know"
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press: 
-            root.manager.current = 'option4'
+            app.opt4_rand()
+            root.manager.current = 'option5'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Start Over'
@@ -239,8 +226,8 @@ Builder.load_string("""
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
             
-<Option4Screen>:
-    name: 'option4'
+<Option5Screen>:
+    name: 'option5'
     MDRectangleFlatButton:
         text: 'Left Option'
         pos_hint: {'center_x':0.3,'center_y':0.3}
@@ -280,6 +267,7 @@ Builder.load_string("""
         text: 'Start Over'
         pos_hint: {'center_x':0.5,'center_y':0.1}
         on_press: 
+            app.user_answers()
             root.manager.current = 'start'
             root.manager.transition.direction = "right"
         text_color: (1, 1, 1, 1)
@@ -289,14 +277,6 @@ Builder.load_string("""
 
 
 class StartScreen(Screen):
-    pass
-
-
-class DiningOptionScreen(Screen):
-    pass
-
-
-class CookingScreen(Screen):
     pass
 
 
@@ -316,22 +296,100 @@ class Option4Screen(Screen):
     pass
 
 
+class Option5Screen(Screen):
+    pass
+
+
 class DecisionScreen(Screen):
     pass
 
 
+class User:
+    default = "undecided"
+    question1 = default
+    question2 = default
+    question3 = default
+    question4 = default
+    question5 = default
+
+
+user1 = User()
+
+
 class What2EatApp(MDApp):
+
+    # Functions for Option1Screen
+    def dining_press(self):     # If Dining Out is selected, set question 1 to "dining"
+        user1.question1 = "dining out"
+
+    def cooking_press(self):    # If Cooking at Home is selected, set question 1 to "cooking"
+        user1.question1 = "cook at home"
+
+    def opt1_rand(self):    # If Choose For Me is selected, randomly set question 1 value
+        num = random.randint(0, 1)
+        if num == 0:
+            user1.question1 = "dining out"
+        else:
+            user1.question1 = "cook at home"
+
+    # Functions for Option2Screen
+    def sweet_press(self):      # If Sweet is selected, set question 2 to "sweet"
+        user1.question2 = "sweet"
+
+    def salty_press(self):      # If Salty is selected, set question 2 to "salty"
+        user1.question2 = "salty"
+
+    def opt2_rand(self):    # If Choose For Me is selected, randomly set question 2 value
+        num = random.randint(0, 1)
+        if num == 0:
+            user1.question2 = "sweet"
+        else:
+            user1.question2 = "salty"
+
+    # Functions for Option3Screen
+    def healthy_press(self):    # If Healthy is selected, set question 3 to "healthy"
+        user1.question3 = "healthy"
+
+    def casual_press(self):     # If Casual is selected, set question 3 to "casual"
+        user1.question3 = "casual"
+
+    def opt3_rand(self):    # If Choose For Me is selected, randomly set question 3 value
+        num = random.randint(0, 1)
+        if num == 0:
+            user1.question3 = "healthy"
+        else:
+            user1.question3 = "casual"
+
+    # Functions for Option4Screen
+    def light_press(self):      # If Light is selected, set question 4 to "light"
+        user1.question4 = "light"
+
+    def heavy_press(self):      # If Heavy is selected, set question4 to "heavy"
+        user1.question4 = "heavy"
+
+    def opt4_rand(self):    # If Choose For Me is selected, randomly set question 4 value
+        num = random.randint(0, 1)
+        if num == 0:
+            user1.question4 = "light"
+        else:
+            user1.question4 = "heavy"
+
+    # Functions
+    def user_answers(self):
+        print(user1.question1 + ", ",
+              user1.question2 + ", ",
+              user1.question3 + ", ",
+              user1.question4)
 
     def build(self):
         # Create the screen manager
         sm = ScreenManager()
         sm.add_widget(StartScreen(name='start'))
-        sm.add_widget(DiningOptionScreen(name='diningOption'))
-        sm.add_widget(CookingScreen(name='cooking'))
         sm.add_widget(Option1Screen(name='option1'))
         sm.add_widget(Option2Screen(name='option2'))
         sm.add_widget(Option3Screen(name='option3'))
         sm.add_widget(Option4Screen(name='option4'))
+        sm.add_widget(Option5Screen(name='option5'))
         sm.add_widget(DecisionScreen(name='decision'))
 
         self.theme_cls.theme_style = "Dark"
