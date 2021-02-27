@@ -1,7 +1,11 @@
 from kivymd.app import MDApp
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
+
+from Meals.py import foodItem
+
 import random
+
 
 Builder.load_string("""
     
@@ -354,13 +358,14 @@ class DecisionScreen(Screen):
 
 
 class User:
+    #def __init__(self, q1, q2, q3, q4):
     default = "undecided"
     question1 = default
     question2 = default
     question3 = default
     question4 = default
-    question5 = default
-
+    #self.question5(q5)
+# def show
 
 user1 = User()
 
@@ -469,5 +474,6 @@ class What2EatApp(MDApp):
 
         return sm
 
+userResponses = foodItem(user1.question1, user1.question2, user1.question3, user1.question4)
 
 What2EatApp().run()
