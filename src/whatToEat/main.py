@@ -454,6 +454,8 @@ class What2EatApp(MDApp):
               user1.question3 + ", ",
               user1.question4 + ", ",
               user1.question5)
+        userResponses = Fooditem( "User Food", user1.question1, user1.question2, user1.question3, user1.question4)
+        userResponses.assign()
 
 
     def build(self):

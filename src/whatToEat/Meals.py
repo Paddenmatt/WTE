@@ -3,16 +3,15 @@
 
 class Fooditem(object):
     def __init__(self, itemName, dining, health, flavor1, weight):
-        self.itemName(itemName)
+        self.itemName = itemName
         print("Init called.")
         self.dining = dining
         self.health = health
         self.flavor1 = flavor1
         self.weight = weight
-        self.assign()
 
     def assign(self): #dining, health, flavor1, weight
-        return self.dining, self.health, self.flavor1, self.weight
+        print("This is a test to see if responses were recorded: " + self.dining)
 
     def show(self):
         print(self.dining)
