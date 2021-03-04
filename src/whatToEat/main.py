@@ -1,330 +1,8 @@
 from kivymd.app import MDApp
-from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
 from Meals import *
 
 import random
-
-Builder.load_string("""
-    
-<StartScreen>:
-    name: 'start'
-    MDLabel:
-        text: 'What 2 Eat'
-        theme_text_color: 'Custom'
-        text_color: (1, 1, 1, 1)
-        halign: 'center'
-   
-    MDRectangleFlatButton:
-        text: 'Lets Eat!'
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0.65, 0, 1)
-        pos_hint: {'center_x':0.5,'center_y':0.3}
-        on_press: 
-            root.manager.current = 'option1'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "I Don't Know!"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0.45, 0, 1)
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press: 
-            app.idk_rand()
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-
-<Option1Screen>:
-    name: 'option1'
-    Image:
-        source: "images/dining.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-    Image:
-        source: "images/cooking.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-        
-    MDRectangleFlatButton:
-        text: 'Dining Out'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
-        on_press: 
-            app.dining_press()
-            root.manager.current = 'option2'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Cook at Home'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
-        on_press: 
-            app.cooking_press()
-            root.manager.current = 'option2'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "Choose For Me"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press: 
-            app.opt1_rand()
-            root.manager.current = 'option2'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-
-<Option2Screen>:
-    name: 'option2'
-    Image:
-        source: "images/sweet.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-    Image:
-        source: "images/salty.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-        
-    MDRectangleFlatButton:
-        text: 'Sweet'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
-        on_press: 
-            app.sweet_press()
-            root.manager.current = 'option3'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Salty'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
-        on_press: 
-            app.salty_press()
-            root.manager.current = 'option3'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "Choose For Me"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press: 
-            app.opt2_rand()
-            root.manager.current = 'option3'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'option1'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-            
-<Option3Screen>:
-    name: 'option3'
-    Image:
-        source: "images/healthy.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-    Image:
-        source: "images/unhealthy.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-        
-    MDRectangleFlatButton:
-        text: 'Healthy'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
-        on_press: 
-            app.healthy_press()
-            root.manager.current = 'option4'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Casual'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
-        on_press: 
-            app.casual_press()
-            root.manager.current = 'option4'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "Choose For Me"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press: 
-            app.opt3_rand()
-            root.manager.current = 'option4'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'option2'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'option2'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-            
-<Option4Screen>:
-    name: 'option4'
-    Image:
-        source: "images/light.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-    Image:
-        source: "images/full.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-        
-    MDRectangleFlatButton:
-        text: 'Light'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
-        on_press: 
-            app.light_press()
-            root.manager.current = 'option5'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Heavy'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
-        on_press: 
-            app.heavy_press()
-            root.manager.current = 'option5'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "Choose For Me"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press: 
-            app.opt4_rand()
-            root.manager.current = 'option5'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'option3'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-            
-<Option5Screen>:
-    name: 'option5'
-    MDRectangleFlatButton:
-        text: 'Left Option'
-        pos_hint: {'center_x':0.3,'center_y':0.3}
-        on_press: 
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Right Option'
-        pos_hint: {'center_x':0.7,'center_y':0.3}
-        on_press: 
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "Choose For Me"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press: 
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press: 
-            root.manager.current = 'option4'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-            
-<DecisionScreen>:
-    name: 'decision'
-    MDLabel:
-        text: "Here's what we think you will like:"
-        theme_text_color: 'Custom'
-        pos_hint: {'center_x':0.5,'center_y':0.8}
-        text_color: (1, 1, 1, 1)
-        halign: 'center'
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.5,'center_y':0.1}
-        on_press: 
-            app.user_answers()
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-
-""")
 
 
 class StartScreen(Screen):
@@ -366,7 +44,9 @@ class User:
 
 user1 = User()
 
+
 class What2EatApp(MDApp):
+    test = "Baked Salmon"
 
     # Functions for Option1Screen
     def dining_press(self):  # If Dining Out is selected, set question 1 to "dining"
@@ -424,7 +104,7 @@ class What2EatApp(MDApp):
         else:
             user1.question4 = "heavy"
 
-    def idk_rand(self):     # If "I Don't Know" is selected, randomly assign all answers
+    def idk_rand(self):  # If "I Don't Know" is selected, randomly assign all answers
         num = random.randint(0, 1)
         if num == 0:
             user1.question1 = "dining out"
@@ -456,11 +136,29 @@ class What2EatApp(MDApp):
               user1.question4 + ", ",
               user1.question5)
 
-        matchedFoods = []   # Array to store the matched foods
-        foods = 3           # Amount of food stored in the database
-        i = 0               # Counter
+        matchedFoods = []  # Array to store the matched foods
+        foods = 3  # Amount of food stored in the database
+        i = 0  # Counter
 
-        while True:         # Loop until the entire foodList has been compared
+        # workingList = []
+        # for obj in foodList:
+        #    if user1.question1 == obj.dining:
+        #        obj.attribute += 1
+        #   if user1.question2 == obj.flavor1:
+        #       obj.attribute += 1
+        #   if user1.question3 == obj.health:
+        #       obj.attribute += 1
+        #   if user1.question4 == obj.weight:
+        #       obj.attribute += 1
+        #   if obj.attribute >= 3:
+        #       workingList.append(obj.itemName)
+        #       matchedFoodsAmount += 1
+        #
+        # matchedFoods.sort(reverse=True)
+        #
+        # matchedFoods = sorted(workingList, key=item.attribute, reverse=True)
+
+        while True:  # Loop until the entire foodList has been compared
             if i == foods:  # If i exceeds the amount of foods in the foodList, break from the loop
                 break
 
@@ -469,25 +167,25 @@ class What2EatApp(MDApp):
                     (user1.question2 == foodList[i].flavor1) & \
                     (user1.question3 == foodList[i].health) & \
                     (user1.question4 == foodList[i].weight):
-                matchedFoods.append(Fooditem(foodList[i].itemName, foodList[i].dining, foodList[i].flavor1, foodList[i].health, foodList[i].weight))
+                matchedFoods.append(
+                    Fooditem(foodList[i].itemName, foodList[i].dining, foodList[i].flavor1, foodList[i].health,
+                             foodList[i].weight))
                 matchedFoodsAmount += 1
 
-            else:   # If all of the users selection does not match a Fooditem, do nothing
+            else:  # If all of the users selection does not match a Fooditem, do nothing
                 pass
 
             i += 1  # Increment counter
 
-        if matchedFoodsAmount > 1:      # If the amount of matched foods exceed 1
-            num = random.randint(0, matchedFoodsAmount-1)
+        if matchedFoodsAmount > 1:  # If the amount of matched foods exceed 1
+            num = random.randint(0, matchedFoodsAmount - 1)
             print(matchedFoods[num].itemName)
 
-        elif matchedFoodsAmount == 1:   # If there is only 1 matched foods in the array
+        elif matchedFoodsAmount == 1:  # If there is only 1 matched foods in the array
             print(matchedFoods[0].itemName)
 
-        else:                           # If there are no matched foods
+        else:  # If there are no matched foods
             print('No Matches Found')
-
-
 
     def build(self):
         # Create the screen manager
@@ -503,10 +201,5 @@ class What2EatApp(MDApp):
         self.theme_cls.theme_style = "Dark"
 
         return sm
-
-
-# userResponses = Fooditem( "User Food", user1.question1, user1.question2, user1.question3, user1.question4)
-# print(userResponses)
-# userResponses = FoodManager()
 
 What2EatApp().run()

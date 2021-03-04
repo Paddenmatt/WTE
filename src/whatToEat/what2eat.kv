@@ -1,0 +1,334 @@
+<StartScreen>:
+    name: 'start'
+    MDLabel:
+        text: 'What 2 Eat'
+        theme_text_color: 'Custom'
+        text_color: (1, 1, 1, 1)
+        halign: 'center'
+
+    MDRectangleFlatButton:
+        text: 'Lets Eat!'
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.65, 0, 1)
+        pos_hint: {'center_x':0.5,'center_y':0.3}
+        on_press:
+            root.manager.current = 'option1'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "I Don't Know!"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.45, 0, 1)
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            app.idk_rand()
+            app.user_answers()
+            root.manager.current = 'decision'
+            root.manager.transition.direction = "left"
+
+<Option1Screen>:
+    name: 'option1'
+    Image:
+        source: "images/dining.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/cooking.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+
+    MDRectangleFlatButton:
+        text: 'Dining Out'
+        pos_hint: {'center_x':0.3,'center_y':0.31}
+        on_press:
+            app.dining_press()
+            root.manager.current = 'option2'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Cook at Home'
+        pos_hint: {'center_x':0.7,'center_y':0.31}
+        on_press:
+            app.cooking_press()
+            root.manager.current = 'option2'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "Choose For Me"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            app.opt1_rand()
+            root.manager.current = 'option2'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.7,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.3,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+<Option2Screen>:
+    name: 'option2'
+    Image:
+        source: "images/sweet.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/salty.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+
+    MDRectangleFlatButton:
+        text: 'Sweet'
+        pos_hint: {'center_x':0.3,'center_y':0.31}
+        on_press:
+            app.sweet_press()
+            root.manager.current = 'option3'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Salty'
+        pos_hint: {'center_x':0.7,'center_y':0.31}
+        on_press:
+            app.salty_press()
+            root.manager.current = 'option3'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "Choose For Me"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            app.opt2_rand()
+            root.manager.current = 'option3'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.7,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.3,'center_y':0.1}
+        on_press:
+            root.manager.current = 'option1'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+<Option3Screen>:
+    name: 'option3'
+    Image:
+        source: "images/healthy.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/unhealthy.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+
+    MDRectangleFlatButton:
+        text: 'Healthy'
+        pos_hint: {'center_x':0.3,'center_y':0.31}
+        on_press:
+            app.healthy_press()
+            root.manager.current = 'option4'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Casual'
+        pos_hint: {'center_x':0.7,'center_y':0.31}
+        on_press:
+            app.casual_press()
+            root.manager.current = 'option4'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "Choose For Me"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            app.opt3_rand()
+            root.manager.current = 'option4'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.7,'center_y':0.1}
+        on_press:
+            root.manager.current = 'option2'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.3,'center_y':0.1}
+        on_press:
+            root.manager.current = 'option2'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+<Option4Screen>:
+    name: 'option4'
+    Image:
+        source: "images/light.jpg"
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    Image:
+        source: "images/full.jpg"
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+
+    MDRectangleFlatButton:
+        text: 'Light'
+        pos_hint: {'center_x':0.3,'center_y':0.31}
+        on_press:
+            app.light_press()
+            root.manager.current = 'option5'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Heavy'
+        pos_hint: {'center_x':0.7,'center_y':0.31}
+        on_press:
+            app.heavy_press()
+            root.manager.current = 'option5'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "Choose For Me"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            app.opt4_rand()
+            root.manager.current = 'option5'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.7,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.3,'center_y':0.1}
+        on_press:
+            root.manager.current = 'option3'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+<Option5Screen>:
+    name: 'option5'
+    MDRectangleFlatButton:
+        text: 'Left Option'
+        pos_hint: {'center_x':0.3,'center_y':0.3}
+        on_press:
+            app.user_answers()
+            root.manager.current = 'decision'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Right Option'
+        pos_hint: {'center_x':0.7,'center_y':0.3}
+        on_press:
+            app.user_answers()
+            root.manager.current = 'decision'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: "Choose For Me"
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            app.user_answers()
+            root.manager.current = 'decision'
+            root.manager.transition.direction = "left"
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.7,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.3,'center_y':0.1}
+        on_press:
+            root.manager.current = 'option4'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+<DecisionScreen>:
+    name: 'decision'
+    MDLabel:
+        text: "Here's what we think you will like:"
+        theme_text_color: 'Custom'
+        pos_hint: {'center_x':0.5,'center_y':0.8}
+        text_color: (1, 1, 1, 1)
+        halign: 'center'
+    MDLabel:
+        text: str(app.test)
+        theme_text_color: 'Custom'
+        pos_hint: {'center_x':0.5,'center_y':0.7}
+        text_color: (1, 1, 1, 1)
+        halign: 'center'
+    Image:
+        source: "images/bakedsalmon.jpeg"
+        pos_hint: {'center_x':0.5,'center_y':0.5}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(200)
+        size_hint_x: None
+        width: dp(120)
+    MDRectangleFlatButton:
+        text: 'Start Over'
+        pos_hint: {'center_x':0.5,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
