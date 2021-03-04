@@ -1,10 +1,9 @@
 from kivymd.app import MDApp
 from kivy.lang.builder import Builder
 from kivy.uix.screenmanager import ScreenManager, Screen
-from Meals import Fooditem
+from Meals import *
 
 import random
-
 
 Builder.load_string("""
     
@@ -364,8 +363,8 @@ class User:
     question4 = default
     question5 = default
 
-user1 = User()
 
+user1 = User()
 
 class What2EatApp(MDApp):
 
@@ -425,7 +424,7 @@ class What2EatApp(MDApp):
         else:
             user1.question4 = "heavy"
 
-    def idk_rand(self):
+    def idk_rand(self):     # If "I Don't Know" is selected, randomly assign all answers
         num = random.randint(0, 1)
         if num == 0:
             user1.question1 = "dining out"
@@ -447,15 +446,47 @@ class What2EatApp(MDApp):
         else:
             user1.question4 = "heavy"
 
-    # Functions
-    def user_answers(self):
+    # Function used to match the users selections to the food database
+    # If the users selection matches a Fooditem, that food gets moved to a matched food list
+    # A random food from the matched food list is selected and presented to the user
+    def user_answers(self, matchedFoodsAmount=0):
         print(user1.question1 + ", ",
               user1.question2 + ", ",
               user1.question3 + ", ",
               user1.question4 + ", ",
               user1.question5)
-        userResponses = Fooditem( "User Food", user1.question1, user1.question2, user1.question3, user1.question4)
-        userResponses.assign()
+
+        matchedFoods = []   # Array to store the matched foods
+        foods = 3           # Amount of food stored in the database
+        i = 0               # Counter
+
+        while True:         # Loop until the entire foodList has been compared
+            if i == foods:  # If i exceeds the amount of foods in the foodList, break from the loop
+                break
+
+            # Compare the users response to all Fooditems in the foodList
+            if (user1.question1 == foodList[i].dining) & \
+                    (user1.question2 == foodList[i].flavor1) & \
+                    (user1.question3 == foodList[i].health) & \
+                    (user1.question4 == foodList[i].weight):
+                matchedFoods.append(Fooditem(foodList[i].itemName, foodList[i].dining, foodList[i].flavor1, foodList[i].health, foodList[i].weight))
+                matchedFoodsAmount += 1
+
+            else:   # If all of the users selection does not match a Fooditem, do nothing
+                pass
+
+            i += 1  # Increment counter
+
+        if matchedFoodsAmount > 1:      # If the amount of matched foods exceed 1
+            num = random.randint(0, matchedFoodsAmount-1)
+            print(matchedFoods[num].itemName)
+
+        elif matchedFoodsAmount == 1:   # If there is only 1 matched foods in the array
+            print(matchedFoods[0].itemName)
+
+        else:                           # If there are no matched foods
+            print('No Matches Found')
+
 
 
     def build(self):
@@ -473,10 +504,9 @@ class What2EatApp(MDApp):
 
         return sm
 
-userResponses = Fooditem( "User Food", user1.question1, user1.question2, user1.question3, user1.question4)
-print(userResponses)
-#userResponses = FoodManager()
+
+# userResponses = Fooditem( "User Food", user1.question1, user1.question2, user1.question3, user1.question4)
+# print(userResponses)
+# userResponses = FoodManager()
 
 What2EatApp().run()
-
-

@@ -1,42 +1,14 @@
-
-
-
 class Fooditem(object):
-    def __init__(self, itemName, dining, health, flavor1, weight):
+    def __init__(self, itemName, dining, flavor1, health, weight):
         self.itemName = itemName
-        print("Init called.")
         self.dining = dining
-        self.health = health
         self.flavor1 = flavor1
+        self.health = health
         self.weight = weight
 
-    def assign(self): #dining, health, flavor1, weight
-        print("This is a test to see if responses were recorded: " + self.dining)
+# Creates an array of Fooditem objects
+foodList = []
 
-    def show(self):
-        print(self.dining)
-        print(self.health)
-        print(self.flavor1)
-        print(self.weight)
-
-
-# class FoodManager:
-#   #list of FoodItem objects
-#   def __init__(self):
-#     self.foodList = []
-
-#   # add item
-#    def add(foodItem):
-#     foodList.insert(foodItem)
-#   # meals = {
-#   #
-#   # }
-
-
-
-
-
-
-
-
-
+foodList.append(Fooditem('Fries', 'dining out', 'salty', 'casual', 'light'))
+foodList.append(Fooditem('Baked Salmon', 'dining out', 'salty', 'healthy', 'light'))
+foodList.append(Fooditem('Steak', 'dining out', 'salty', 'healthy', 'light'))
