@@ -49,3 +49,11 @@
         height: dp(200)
         size_hint_x: None
         width: dp(120)
+
+decison label
+    MDLabel:
+        text: str(app.test)
+        theme_text_color: 'Custom'
+        pos_hint: {'center_x':0.5,'center_y':0.7}
+        text_color: (1, 1, 1, 1)
+        halign: 'center'
