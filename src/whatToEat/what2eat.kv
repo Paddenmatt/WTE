@@ -228,21 +228,21 @@
         pos_hint: {'center_x':0.3,'center_y':0.31}
         on_press:
             app.light_press()
-            root.manager.current = 'option5'
+            root.manager.current = 'decision'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Heavy'
         pos_hint: {'center_x':0.7,'center_y':0.31}
         on_press:
             app.heavy_press()
-            root.manager.current = 'option5'
+            root.manager.current = 'decision'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: "Choose For Me"
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press:
             app.opt4_rand()
-            root.manager.current = 'option5'
+            root.manager.current = 'decision'
             root.manager.transition.direction = "left"
     MDRectangleFlatButton:
         text: 'Start Over'
@@ -261,45 +261,6 @@
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)
 
-<Option5Screen>:
-    name: 'option5'
-    MDRectangleFlatButton:
-        text: 'Left Option'
-        pos_hint: {'center_x':0.3,'center_y':0.3}
-        on_press:
-            app.user_answers()
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Right Option'
-        pos_hint: {'center_x':0.7,'center_y':0.3}
-        on_press:
-            app.user_answers()
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: "Choose For Me"
-        pos_hint: {'center_x':0.5,'center_y':0.2}
-        on_press:
-            app.user_answers()
-            root.manager.current = 'decision'
-            root.manager.transition.direction = "left"
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
-        on_press:
-            root.manager.current = 'start'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
-        on_press:
-            root.manager.current = 'option4'
-            root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
 <DecisionScreen>:
     name: 'decision'
@@ -316,7 +277,7 @@
         text_color: (1, 1, 1, 1)
         halign: 'center'
     Image:
-        source: "images/bakedsalmon.jpeg"
+        source: ""
         pos_hint: {'center_x':0.5,'center_y':0.5}
         allow_stretch: True
         keep_ratio: False

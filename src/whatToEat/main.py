@@ -25,8 +25,8 @@ class Option4Screen(Screen):
     pass
 
 
-class Option5Screen(Screen):
-    pass
+# class Option5Screen(Screen):
+#     pass
 
 
 class DecisionScreen(Screen):
@@ -195,7 +195,7 @@ class What2EatApp(MDApp):
         sm.add_widget(Option2Screen(name='option2'))
         sm.add_widget(Option3Screen(name='option3'))
         sm.add_widget(Option4Screen(name='option4'))
-        sm.add_widget(Option5Screen(name='option5'))
+        # sm.add_widget(Option5Screen(name='option5'))
         sm.add_widget(DecisionScreen(name='decision'))
 
         self.theme_cls.theme_style = "Dark"
