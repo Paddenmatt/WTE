@@ -1,5 +1,6 @@
 from kivymd.app import MDApp
 from kivy.uix.screenmanager import ScreenManager, Screen
+from kivy.core.window import Window
 from Meals import *
 
 import random
@@ -33,6 +34,10 @@ class DecisionScreen(Screen):
     pass
 
 
+class ThemeScreen(Screen):
+    pass
+
+
 class User:
     default = "undecided"
     question1 = default
@@ -44,9 +49,24 @@ class User:
 
 user1 = User()
 
+Window.size = (350, 600)
 
 class What2EatApp(MDApp):
     test = "Baked Salmon"
+
+    def light_theme(self):
+        self.theme_cls.theme_style = "Light"
+
+    def dark_theme(self):
+        self.theme_cls.theme_style = "Dark"
+
+    def red_palette(self):
+        self.theme_cls.primary_palette = "Red"
+
+    def orange_palette(self):
+        self.theme_cls.primary_palette = "Orange"
+
+
 
     # Functions for Option1Screen
     def dining_press(self):  # If Dining Out is selected, set question 1 to "dining"
@@ -197,9 +217,12 @@ class What2EatApp(MDApp):
         sm.add_widget(Option4Screen(name='option4'))
         # sm.add_widget(Option5Screen(name='option5'))
         sm.add_widget(DecisionScreen(name='decision'))
+        sm.add_widget(ThemeScreen(name='theme'))
 
         self.theme_cls.theme_style = "Dark"
+        self.theme_cls.primary_palette = "Orange"
 
         return sm
+
 
 What2EatApp().run()
