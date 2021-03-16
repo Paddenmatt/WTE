@@ -52,21 +52,12 @@ user1 = User()
 Window.size = (350, 600)
 
 class What2EatApp(MDApp):
-    test = "Baked Salmon"
 
     def light_theme(self):
         self.theme_cls.theme_style = "Light"
 
     def dark_theme(self):
         self.theme_cls.theme_style = "Dark"
-
-    def red_palette(self):
-        self.theme_cls.primary_palette = "Red"
-
-    def orange_palette(self):
-        self.theme_cls.primary_palette = "Orange"
-
-
 
     # Functions for Option1Screen
     def dining_press(self):  # If Dining Out is selected, set question 1 to "dining"
