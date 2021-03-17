@@ -210,7 +210,7 @@ class What2EatApp(MDApp):
         sm.add_widget(DecisionScreen(name='decision'))
         sm.add_widget(ThemeScreen(name='theme'))
 
-        self.theme_cls.theme_style = "Dark"
+        self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Orange"
 
         return sm

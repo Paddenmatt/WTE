@@ -2,8 +2,6 @@
     name: 'start'
     MDLabel:
         text: 'What to Eat'
-        theme_text_color: 'Custom'
-        text_color: (1, 1, 1, 1)
         halign: 'center'
 
     MDRectangleFlatButton:
@@ -53,7 +51,7 @@
                             root.manager.current = 'theme'
                             root.manager.transition.direction = "left"
                     OneLineListItem:
-                        text: 'Clock'
+                        text: 'Meal Type'
 <ThemeScreen>:
     name:'theme'
 
@@ -94,44 +92,61 @@
 
 <Option1Screen>:
     name: 'option1'
-    Image:
-        source: "images/dining.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
 
-    Image:
-        source: "images/cooking.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-
-    MDRectangleFlatButton:
+    Button:
         text: 'Dining Out'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.dining_press()
             root.manager.current = 'option2'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
+        Image:
+            source: "images/dining.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    Button:
         text: 'Cook at Home'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.cooking_press()
             root.manager.current = 'option2'
             root.manager.transition.direction = "left"
 
+        Image:
+            source: "images/cooking.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    MDLabel:
+        text: "Dining Out"
+        pos_hint: {'center_x': 0.7,'center_y':0.45}
+
+    MDLabel:
+        text: "Cook at Home"
+        pos_hint: {'center_x': 1.05,'center_y':0.45}
+
     MDRectangleFlatButton:
         text: "Choose For Me"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.65, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press:
             app.opt1_rand()
@@ -158,44 +173,61 @@
 
 <Option2Screen>:
     name: 'option2'
-    Image:
-        source: "images/sweet.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
 
-    Image:
-        source: "images/salty.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-
-    MDRectangleFlatButton:
+    Button:
         text: 'Sweet'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.sweet_press()
             root.manager.current = 'option3'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
+        Image:
+            source: "images/sweet.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    Button:
         text: 'Salty'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.salty_press()
             root.manager.current = 'option3'
             root.manager.transition.direction = "left"
 
+        Image:
+            source: "images/salty.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    MDLabel:
+        text: "Sweet"
+        pos_hint: {'center_x': 0.745,'center_y':0.45}
+
+    MDLabel:
+        text: "Salty"
+        pos_hint: {'center_x': 1.15,'center_y':0.45}
+
     MDRectangleFlatButton:
         text: "Choose For Me"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.65, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press:
             app.opt2_rand()
@@ -222,44 +254,61 @@
 
 <Option3Screen>:
     name: 'option3'
-    Image:
-        source: "images/healthy.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
 
-    Image:
-        source: "images/unhealthy.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-
-    MDRectangleFlatButton:
+    Button:
         text: 'Healthy'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.healthy_press()
             root.manager.current = 'option4'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
+        Image:
+            source: "images/healthy.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    Button:
         text: 'Casual'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.casual_press()
             root.manager.current = 'option4'
             root.manager.transition.direction = "left"
 
+        Image:
+            source: "images/unhealthy.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    MDLabel:
+        text: "Healthy"
+        pos_hint: {'center_x': 0.735,'center_y':0.45}
+
+    MDLabel:
+        text: "Casual"
+        pos_hint: {'center_x': 1.13,'center_y':0.45}
+
     MDRectangleFlatButton:
         text: "Choose For Me"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.65, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press:
             app.opt3_rand()
@@ -286,46 +335,63 @@
 
 <Option4Screen>:
     name: 'option4'
-    Image:
-        source: "images/light.jpg"
-        pos_hint: {'center_x':0.3,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
 
-    Image:
-        source: "images/full.jpg"
-        pos_hint: {'center_x':0.7,'center_y':0.65}
-        allow_stretch: True
-        keep_ratio: False
-        size_hint_y: None
-        height: dp(200)
-        size_hint_x: None
-        width: dp(120)
-
-    MDRectangleFlatButton:
+    Button:
         text: 'Light'
-        pos_hint: {'center_x':0.3,'center_y':0.31}
+        pos_hint: {'center_x':0.3,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.light_press()
             app.user_answers()
             root.manager.current = 'decision'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
+        Image:
+            source: "images/light.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    Button:
         text: 'Heavy'
-        pos_hint: {'center_x':0.7,'center_y':0.31}
+        pos_hint: {'center_x':0.7,'center_y':0.65}
+        size_hint: 0.345, 0.335
         on_press:
             app.heavy_press()
             app.user_answers()
             root.manager.current = 'decision'
             root.manager.transition.direction = "left"
 
+        Image:
+            source: "images/full.jpg"
+            center_x: self.parent.center_x
+            center_y: self.parent.center_y
+            pos_hint: {'center_x':0.7,'center_y':0.65}
+            allow_stretch: True
+            keep_ratio: False
+            size_hint_y: None
+            height: dp(200)
+            size_hint_x: None
+            width: dp(120)
+
+    MDLabel:
+        text: "Light"
+        pos_hint: {'center_x': 0.745,'center_y':0.45}
+
+    MDLabel:
+        text: "Heavy"
+        pos_hint: {'center_x': 1.14,'center_y':0.45}
+
     MDRectangleFlatButton:
         text: "Choose For Me"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.65, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press:
             app.opt4_rand()
