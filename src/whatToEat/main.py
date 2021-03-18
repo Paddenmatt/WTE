@@ -4,6 +4,7 @@ from kivy.core.window import Window
 from Meals import *
 
 import random
+import operator
 
 
 class StartScreen(Screen):
@@ -50,6 +51,7 @@ class User:
 user1 = User()
 
 Window.size = (350, 600)
+
 
 class What2EatApp(MDApp):
 
@@ -148,28 +150,23 @@ class What2EatApp(MDApp):
               user1.question5)
 
         matchedFoods = []  # Array to store the matched foods
-        foods = 3  # Amount of food stored in the database
-        i = 0  # Counter
+        # foods = 3  # Amount of food stored in the database
+        # i = 0  # Counter
 
-        # workingList = []
-        # for obj in foodList:
-        #    if user1.question1 == obj.dining:
-        #        obj.attribute += 1
-        #   if user1.question2 == obj.flavor1:
-        #       obj.attribute += 1
-        #   if user1.question3 == obj.health:
-        #       obj.attribute += 1
-        #   if user1.question4 == obj.weight:
-        #       obj.attribute += 1
-        #   if obj.attribute >= 3:
-        #       workingList.append(obj.itemName)
-        #       matchedFoodsAmount += 1
-        #
-        # matchedFoods.sort(reverse=True)
-        #
-        # matchedFoods = sorted(workingList, key=item.attribute, reverse=True)
+        for obj in foodList:
+            if user1.question1 == obj.dining:
+                if user1.question2 == obj.flavor1:
+                    obj.attribute += 1
+                if user1.question3 == obj.health:
+                    obj.attribute += 1
+                if user1.question4 == obj.weight:
+                    obj.attribute += 1
+                if obj.attribute >= 2:
+                    matchedFoods.append(obj)
+                    matchedFoodsAmount += 1
+        matchedFoods.sort()
 
-        while True:  # Loop until the entire foodList has been compared
+        '''while True:  # Loop until the entire foodList has been compared
             if i == foods:  # If i exceeds the amount of foods in the foodList, break from the loop
                 break
 
@@ -179,24 +176,25 @@ class What2EatApp(MDApp):
                     (user1.question3 == foodList[i].health) & \
                     (user1.question4 == foodList[i].weight):
                 matchedFoods.append(
-                    Fooditem(foodList[i].itemName, foodList[i].dining, foodList[i].flavor1, foodList[i].health,
-                             foodList[i].weight))
+                    Fooditem(foodList[i].itemName, foodList[i].mealType, foodList[i].dining, foodList[i].flavor1, foodList[i].health, foodList[i].weight))
                 matchedFoodsAmount += 1
 
             else:  # If all of the users selection does not match a Fooditem, do nothing
                 pass
 
-            i += 1  # Increment counter
+            i += 1  # Increment counter'''
+        for item in matchedFoods:      #to test the matchedFoods
+            print(item.itemName)
 
-        if matchedFoodsAmount > 1:  # If the amount of matched foods exceed 1
-            num = random.randint(0, matchedFoodsAmount - 1)
-            print(matchedFoods[num].itemName)
+        '''if matchedFoodsAmount > 1:  # If the amount of matched foods exceed 1
+            #num = random.randint(0, matchedFoodsAmount - 1)
+            print(matchedFoods[0].itemName)
 
         elif matchedFoodsAmount == 1:  # If there is only 1 matched foods in the array
             print(matchedFoods[0].itemName)
 
         else:  # If there are no matched foods
-            print('No Matches Found')
+            print('No Matches Found')'''
 
     def build(self):
         # Create the screen manager
