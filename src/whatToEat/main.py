@@ -39,6 +39,10 @@ class ThemeScreen(Screen):
     pass
 
 
+class MealTypeScreen(Screen):
+    pass
+
+
 class User:
     default = "undecided"
     question1 = default
@@ -49,6 +53,7 @@ class User:
 
 
 user1 = User()
+meal = "lunch"
 
 Window.size = (350, 600)
 
@@ -60,6 +65,18 @@ class What2EatApp(MDApp):
 
     def dark_theme(self):
         self.theme_cls.theme_style = "Dark"
+
+    def meal_breakfast(self):
+        global meal
+        meal = "breakfast"
+
+    def meal_lunch(self):
+        global meal
+        meal = "lunch"
+
+    def meal_dinner(self):
+        global meal
+        meal = "dinner"
 
     # Functions for Option1Screen
     def dining_press(self):  # If Dining Out is selected, set question 1 to "dining"
@@ -147,14 +164,15 @@ class What2EatApp(MDApp):
               user1.question2 + ", ",
               user1.question3 + ", ",
               user1.question4 + ", ",
-              user1.question5)
+              user1.question5 + ", ",
+              meal)
 
         matchedFoods = []  # Array to store the matched foods
         # foods = 3  # Amount of food stored in the database
         # i = 0  # Counter
 
         for obj in foodList:
-            if user1.question1 == obj.dining:
+            if (user1.question1 == obj.dining) & (meal == obj.mealType):
                 if user1.question2 == obj.flavor1:
                     obj.attribute += 1
                 if user1.question3 == obj.health:
@@ -207,6 +225,8 @@ class What2EatApp(MDApp):
         # sm.add_widget(Option5Screen(name='option5'))
         sm.add_widget(DecisionScreen(name='decision'))
         sm.add_widget(ThemeScreen(name='theme'))
+        sm.add_widget(MealTypeScreen(name='mealType'))
+
 
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Orange"

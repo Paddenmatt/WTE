@@ -1,7 +1,7 @@
 class Fooditem(object):
-    def __init__(self, itemName, dining, flavor1, health, weight, attribute=0):
+    def __init__(self, itemName, mealType, dining, flavor1, health, weight, attribute=0):
         self.itemName = itemName
-        #self.mealType = mealType
+        self.mealType = mealType
         self.dining = dining
         self.flavor1 = flavor1
         self.health = health
@@ -16,10 +16,10 @@ class Fooditem(object):
 # Creates an array of Fooditem objects
 foodList = []
 
-foodList.append(Fooditem('Fries', 'dining out', 'salty', 'casual', 'light'))
-foodList.append(Fooditem('Baked Salmon', 'dining out', 'salty', 'healthy', 'light'))
-foodList.append(Fooditem('Steak', 'dining out', 'salty', 'healthy', 'light'))
-foodList.append(Fooditem('Ravioli', 'dining out', 'salty', 'healthy', 'full'))
+foodList.append(Fooditem('Fries','lunch', 'dining out', 'salty', 'casual', 'light'))
+foodList.append(Fooditem('Baked Salmon','dinner', 'dining out', 'salty', 'healthy', 'light'))
+foodList.append(Fooditem('Steak','dinner', 'dining out', 'salty', 'healthy', 'light'))
+foodList.append(Fooditem('Ravioli','dinner', 'dining out', 'salty', 'healthy', 'full'))
 #foodList.append(Fooditem("GrilledChicken", "dining out", "Healthy", "salty", "light")
 #foodList.append(Fooditem("GrilledSalmon", "dining out", "healthy", "salty", "light")
 #foodList.append(Fooditem("Ravioli", "dining in", "casual", "salty", "full")

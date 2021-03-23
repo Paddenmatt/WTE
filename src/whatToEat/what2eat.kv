@@ -52,6 +52,9 @@
                             root.manager.transition.direction = "left"
                     OneLineListItem:
                         text: 'Meal Type'
+                        on_press:
+                            root.manager.current = 'mealType'
+                            root.manager.transition.direction = "left"
 <ThemeScreen>:
     name:'theme'
 
@@ -80,6 +83,51 @@
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0.5, 0, 1)
 
+
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.5,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
+<MealTypeScreen>:
+    name:'mealType'
+
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDToolbar:
+            title: 'Meal Type'
+            md_bg_color: (1, 0.65, 0, 1)
+
+        ScrollView:
+
+    MDRectangleFlatButton:
+        text: 'Breakfast'
+        pos_hint: {'center_x':0.5,'center_y':0.6}
+        on_press:
+            app.meal_breakfast()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
+    MDRectangleFlatButton:
+        text: 'Lunch'
+        pos_hint: {'center_x':0.5,'center_y':0.5}
+        on_press:
+            app.meal_lunch()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
+    MDRectangleFlatButton:
+        text: 'Dinner'
+        pos_hint: {'center_x':0.5,'center_y':0.4}
+        on_press:
+            app.meal_dinner()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
 
     MDRectangleFlatButton:
         text: 'Go Back'
@@ -153,23 +201,19 @@
             root.manager.current = 'option2'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.9,'center_y':0.06}
+        icon: 'restart'
         on_press:
             root.manager.current = 'start'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.1,'center_y':0.06}
+        icon: 'chevron-left'
         on_press:
             root.manager.current = 'start'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
 <Option2Screen>:
     name: 'option2'
@@ -234,23 +278,19 @@
             root.manager.current = 'option3'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.9,'center_y':0.06}
+        icon: 'restart'
         on_press:
             root.manager.current = 'start'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.1,'center_y':0.06}
+        icon: 'chevron-left'
         on_press:
             root.manager.current = 'option1'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
 <Option3Screen>:
     name: 'option3'
@@ -315,23 +355,19 @@
             root.manager.current = 'option4'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.9,'center_y':0.06}
+        icon: 'restart'
         on_press:
             root.manager.current = 'start'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.1,'center_y':0.06}
+        icon: 'chevron-left'
         on_press:
             root.manager.current = 'option2'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
 <Option4Screen>:
     name: 'option4'
@@ -399,23 +435,19 @@
             root.manager.current = 'decision'
             root.manager.transition.direction = "left"
 
-    MDRectangleFlatButton:
-        text: 'Start Over'
-        pos_hint: {'center_x':0.7,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.9,'center_y':0.06}
+        icon: 'restart'
         on_press:
             root.manager.current = 'start'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
-    MDRectangleFlatButton:
-        text: 'Go Back'
-        pos_hint: {'center_x':0.3,'center_y':0.1}
+    MDIconButton:
+        pos_hint: {'center_x':0.1,'center_y':0.06}
+        icon: 'chevron-left'
         on_press:
             root.manager.current = 'option3'
             root.manager.transition.direction = "right"
-        text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
 
 <DecisionScreen>:
     name: 'decision'
@@ -427,7 +459,7 @@
         halign: 'center'
 
     MDRectangleFlatButton:
-        text: 'Start Over'
+        text: 'Go Back to Home'
         pos_hint: {'center_x':0.5,'center_y':0.1}
         on_press:
             root.manager.current = 'start'
