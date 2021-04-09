@@ -453,16 +453,29 @@
     name: 'decision'
     MDLabel:
         text: "Here's what we think you will like:"
-        theme_text_color: 'Custom'
         pos_hint: {'center_x':0.5,'center_y':0.8}
-        text_color: (1, 1, 1, 1)
+        halign: 'center'
+
+    MDLabel:
+        text: str(root.selection)
+        pos_hint: {'center_x':0.5,'center_y':0.5}
         halign: 'center'
 
     MDRectangleFlatButton:
         text: 'Go Back to Home'
         pos_hint: {'center_x':0.5,'center_y':0.1}
         on_press:
-            root.manager.current = 'start'
             root.manager.transition.direction = "right"
+            root.manager.current = 'start'
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+    MDRectangleFlatButton:
+        text: 'Test Update'
+        pos_hint: {'center_x':0.5,'center_y':0.3}
+        on_press:
+            root.manager.transition.direction = "left"
+            app.new_decision()
+            app.showFood()
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0, 0, 1)

@@ -1,10 +1,16 @@
+from kivy.properties import StringProperty
 from kivymd.app import MDApp
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
 from Meals import *
 
 import random
-import operator
+import time
+
+meal = "lunch"
+sm = ScreenManager()
+
+Window.size = (350, 600)
 
 
 class StartScreen(Screen):
@@ -27,12 +33,8 @@ class Option4Screen(Screen):
     pass
 
 
-# class Option5Screen(Screen):
-#     pass
-
-
 class DecisionScreen(Screen):
-    pass
+    selection = StringProperty()
 
 
 class ThemeScreen(Screen):
@@ -53,12 +55,10 @@ class User:
 
 
 user1 = User()
-meal = "lunch"
-
-Window.size = (350, 600)
 
 
 class What2EatApp(MDApp):
+    foodDecision = "Blank"
 
     def light_theme(self):
         self.theme_cls.theme_style = "Light"
@@ -201,8 +201,9 @@ class What2EatApp(MDApp):
                 pass
 
             i += 1  # Increment counter'''
-        for item in matchedFoods:      #to test the matchedFoods
+        for item in matchedFoods:  # to test the matchedFoods
             print(item.itemName)
+            self.foodDecision = item.itemName
 
         '''if matchedFoodsAmount > 1:  # If the amount of matched foods exceed 1
             #num = random.randint(0, matchedFoodsAmount - 1)
@@ -214,19 +215,30 @@ class What2EatApp(MDApp):
         else:  # If there are no matched foods
             print('No Matches Found')'''
 
+    # Junk Terminal Testing
+    def showFood(self):
+        print(self.foodDecision)
+
+    # Used to update displayed food suggestions (Swipe-like feature)
+    def new_decision(self):
+        name = str(time.time())
+        selection = self.foodDecision
+
+        s = DecisionScreen(name=name)
+        s.selection = selection
+        sm.add_widget(s)
+        sm.current = name
+
     def build(self):
         # Create the screen manager
-        sm = ScreenManager()
         sm.add_widget(StartScreen(name='start'))
         sm.add_widget(Option1Screen(name='option1'))
         sm.add_widget(Option2Screen(name='option2'))
         sm.add_widget(Option3Screen(name='option3'))
         sm.add_widget(Option4Screen(name='option4'))
-        # sm.add_widget(Option5Screen(name='option5'))
         sm.add_widget(DecisionScreen(name='decision'))
         sm.add_widget(ThemeScreen(name='theme'))
         sm.add_widget(MealTypeScreen(name='mealType'))
-
 
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Orange"
