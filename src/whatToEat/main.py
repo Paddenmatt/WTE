@@ -64,6 +64,8 @@ user1 = User()
 
 class What2EatApp(MDApp):
     foodDecision = "Blank"
+    matchedFoods = []  # Array to store the matched foods
+    index = 0
 
     def light_theme(self):
         self.theme_cls.theme_style = "Light"
@@ -172,10 +174,6 @@ class What2EatApp(MDApp):
               user1.question5 + ", ",
               meal)
 
-        matchedFoods = []  # Array to store the matched foods
-        # foods = 3  # Amount of food stored in the database
-        # i = 0  # Counter
-
         for obj in foodList:
             if (user1.question1 == obj.dining) & (meal == obj.mealType):
                 if user1.question2 == obj.flavor1:
@@ -185,13 +183,22 @@ class What2EatApp(MDApp):
                 if user1.question4 == obj.weight:
                     obj.attribute += 1
                 if obj.attribute >= 2:
-                    matchedFoods.append(obj)
+                    self.matchedFoods.append(obj)
                     matchedFoodsAmount += 1
-        matchedFoods.sort()
 
-        for item in matchedFoods:  # to test the matchedFoods
+        self.matchedFoods.sort()
+        self.foodDecision = self.matchedFoods[0].itemName
+
+        for item in self.matchedFoods:  # to test the matchedFoods
             print(item.itemName)
-            self.foodDecision = item.itemName
+            # self.foodDecision = item.itemName
+
+    def next_suggestion(self):
+        if self.foodDecision == self.matchedFoods[self.index].itemName or \
+                self.foodDecision == self.matchedFoods[self.index - 1].itemName:
+            self.foodDecision = self.matchedFoods[self.index].itemName
+            self.index += 1
+
 
     # JUNK Terminal Testing (DELETE LATER)
     def showFood(self):

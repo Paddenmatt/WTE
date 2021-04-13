@@ -475,6 +475,7 @@
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press:
             root.manager.transition.direction = "left"
+            app.next_suggestion()
             app.new_decision()
             app.showFood()
         text_color: (1, 1, 1, 1)
