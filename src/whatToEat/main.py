@@ -37,6 +37,7 @@ class Option4Screen(Screen):
 
 class DecisionScreen(Screen):
     selection = StringProperty()
+    display = StringProperty()
 
 
 class ThemeScreen(Screen):
@@ -65,6 +66,7 @@ user1 = User()
 class What2EatApp(MDApp):
     foodDecision = "Blank"
     matchedFoods = []  # Array to store the matched foods
+    matchedFoodsAmount = 0
     index = 0
 
     def light_theme(self):
@@ -166,7 +168,7 @@ class What2EatApp(MDApp):
     # Function used to match the users selections to the food database
     # If the users selection matches a Fooditem, that food gets moved to a matched food list
     # A random food from the matched food list is selected and presented to the user
-    def user_answers(self, matchedFoodsAmount=0):
+    def user_answers(self):
         print(user1.question1 + ", ",
               user1.question2 + ", ",
               user1.question3 + ", ",
@@ -184,21 +186,27 @@ class What2EatApp(MDApp):
                     obj.attribute += 1
                 if obj.attribute >= 2:
                     self.matchedFoods.append(obj)
-                    matchedFoodsAmount += 1
+                    self.matchedFoodsAmount += 1
 
         self.matchedFoods.sort()
-        self.foodDecision = self.matchedFoods[0].itemName
+
+        # If a food exists in matchedFoods, set the best matched food to foodDecision
+        if self.matchedFoodsAmount > 0:
+            self.foodDecision = self.matchedFoods[0].itemName
 
         for item in self.matchedFoods:  # to test the matchedFoods
             print(item.itemName)
-            # self.foodDecision = item.itemName
 
     def next_suggestion(self):
-        if self.foodDecision == self.matchedFoods[self.index].itemName or \
-                self.foodDecision == self.matchedFoods[self.index - 1].itemName:
-            self.foodDecision = self.matchedFoods[self.index].itemName
-            self.index += 1
 
+        if self.index == self.matchedFoodsAmount:
+            self.foodDecision = "We are out of suggestions"
+
+        elif self.matchedFoodsAmount > 0:
+            if self.foodDecision == self.matchedFoods[self.index].itemName or \
+                    self.foodDecision == self.matchedFoods[self.index - 1].itemName:
+                self.foodDecision = self.matchedFoods[self.index].itemName
+                self.index += 1
 
     # JUNK Terminal Testing (DELETE LATER)
     def showFood(self):
@@ -206,11 +214,17 @@ class What2EatApp(MDApp):
 
     # Used to update displayed food suggestions (Swipe-like feature)
     def new_decision(self):
+        global meal
         name = str(time.time())
         selection = self.foodDecision
+        display = "Your selections are: " + \
+                  user1.question1 + ", " + user1.question2 + ", " + \
+                  user1.question3 + ", " + user1.question4 + ", " + \
+                  "and " + meal
 
         s = DecisionScreen(name=name)
         s.selection = selection
+        s.display = display
         sm.add_widget(s)
         sm.current = name
 
