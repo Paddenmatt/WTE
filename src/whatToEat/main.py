@@ -38,6 +38,7 @@ class Option4Screen(Screen):
 class DecisionScreen(Screen):
     selection = StringProperty()
     display = StringProperty()
+    image = StringProperty()
 
 
 class ThemeScreen(Screen):
@@ -65,6 +66,7 @@ user1 = User()
 
 class What2EatApp(MDApp):
     foodDecision = "Blank"
+    newImage = "Blank"
     matchedFoods = []  # Array to store the matched foods
     matchedFoodsAmount = 0
     index = 0
@@ -206,24 +208,26 @@ class What2EatApp(MDApp):
             if self.foodDecision == self.matchedFoods[self.index].itemName or \
                     self.foodDecision == self.matchedFoods[self.index - 1].itemName:
                 self.foodDecision = self.matchedFoods[self.index].itemName
+                self.newImage = self.matchedFoods[self.index].image
                 self.index += 1
 
     # JUNK Terminal Testing (DELETE LATER)
     def showFood(self):
-        print(self.foodDecision)
+        print(self.newImage)
 
     # Used to update displayed food suggestions (Swipe-like feature)
     def new_decision(self):
         global meal
         name = str(time.time())
         selection = self.foodDecision
+        image = self.newImage
         display = "Your selections are: " + \
                   user1.question1 + ", " + user1.question2 + ", " + \
                   user1.question3 + ", " + user1.question4 + ", " + \
                   "and " + meal
-
         s = DecisionScreen(name=name)
         s.selection = selection
+        s.image = image
         s.display = display
         sm.add_widget(s)
         sm.current = name
