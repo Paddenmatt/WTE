@@ -6,6 +6,7 @@ from Meals import *
 
 import random
 import time
+import webbrowser
 
 meal = "lunch"
 sm = ScreenManager()
@@ -41,6 +42,12 @@ class DecisionScreen(Screen):
     image = StringProperty()
 
 
+class CookDecisionScreen(Screen):
+    selection = StringProperty()
+    display = StringProperty()
+    image = StringProperty()
+
+
 class ThemeScreen(Screen):
     pass
 
@@ -67,6 +74,7 @@ user1 = User()
 class What2EatApp(MDApp):
     foodDecision = "Blank"
     newImage = "Blank"
+    link = "Blank"
     matchedFoods = []  # Array to store the matched foods
     matchedFoodsAmount = 0
     index = 0
@@ -209,6 +217,7 @@ class What2EatApp(MDApp):
                     self.foodDecision == self.matchedFoods[self.index - 1].itemName:
                 self.foodDecision = self.matchedFoods[self.index].itemName
                 self.newImage = self.matchedFoods[self.index].image
+                self.link = self.matchedFoods[self.index].link
                 self.index += 1
 
     # JUNK Terminal Testing (DELETE LATER)
@@ -225,12 +234,24 @@ class What2EatApp(MDApp):
                   user1.question1 + ", " + user1.question2 + ", " + \
                   user1.question3 + ", " + user1.question4 + ", " + \
                   "and " + meal
-        s = DecisionScreen(name=name)
-        s.selection = selection
-        s.image = image
-        s.display = display
-        sm.add_widget(s)
-        sm.current = name
+        if self.matchedFoods[self.index].dining == "cook at home":
+            s = CookDecisionScreen(name=name)
+            s.selection = selection
+            s.image = image
+            s.display = display
+            sm.add_widget(s)
+            sm.current = name
+        else:
+            s = DecisionScreen(name=name)
+            s.selection = selection
+            s.image = image
+            s.display = display
+            sm.add_widget(s)
+            sm.current = name
+
+    def get_link(self):
+        print(self.link)
+        webbrowser.open(self.link)
 
     def build(self):
         # Create the screen manager
@@ -240,6 +261,7 @@ class What2EatApp(MDApp):
         sm.add_widget(Option3Screen(name='option3'))
         sm.add_widget(Option4Screen(name='option4'))
         sm.add_widget(DecisionScreen(name='decision'))
+        sm.add_widget(CookDecisionScreen(name='cookDecision'))
         sm.add_widget(ThemeScreen(name='theme'))
         sm.add_widget(MealTypeScreen(name='mealType'))
 

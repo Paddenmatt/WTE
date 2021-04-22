@@ -453,12 +453,12 @@
     name: 'decision'
     MDLabel:
         text: str(root.display)
-        pos_hint: {'center_x':0.5,'center_y':0.8}
+        pos_hint: {'center_x':0.5,'center_y':0.9}
         halign: 'center'
 
     Image:
         source: str(root.image)
-        pos_hint: {'center_x':0.5,'center_y':0.54}
+        pos_hint: {'center_x':0.5,'center_y':0.64}
         allow_stretch: True
         keep_ratio: False
         size_hint_y: None
@@ -468,8 +468,58 @@
 
     MDLabel:
         text: str(root.selection)
-        pos_hint: {'center_x':0.5,'center_y':0.3}
+        pos_hint: {'center_x':0.5,'center_y':0.4}
         halign: 'center'
+
+    MDRectangleFlatButton:
+        text: 'View Suggestion'
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            root.manager.transition.direction = "left"
+            app.next_suggestion()
+            app.new_decision()
+            app.showFood()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+    MDRectangleFlatButton:
+        text: 'Go Back to Home'
+        pos_hint: {'center_x':0.5,'center_y':0.1}
+        on_press:
+            root.manager.transition.direction = "right"
+            root.manager.current = 'start'
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
+
+<CookDecisionScreen>:
+    name: 'cookDecision'
+    MDLabel:
+        text: str(root.display)
+        pos_hint: {'center_x':0.5,'center_y':0.9}
+        halign: 'center'
+
+    Image:
+        source: str(root.image)
+        pos_hint: {'center_x':0.5,'center_y':0.64}
+        allow_stretch: True
+        keep_ratio: False
+        size_hint_y: None
+        height: dp(245)
+        size_hint_x: None
+        width: dp(200)
+
+    MDLabel:
+        text: str(root.selection)
+        pos_hint: {'center_x':0.5,'center_y':0.4}
+        halign: 'center'
+
+    MDRectangleFlatButton:
+        text: 'Get Recipe'
+        pos_hint: {'center_x':0.5,'center_y':0.3}
+        on_press:
+            app.get_link()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0, 0, 1)
 
     MDRectangleFlatButton:
         text: 'View Suggestion'
