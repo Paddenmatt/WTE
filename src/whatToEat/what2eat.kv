@@ -55,6 +55,11 @@
                         on_press:
                             root.manager.current = 'mealType'
                             root.manager.transition.direction = "left"
+                    OneLineListItem:
+                        text: 'Personalization'
+                        on_press:
+                            root.manager.current = 'personal'
+                            root.manager.transition.direction = "left"
 <ThemeScreen>:
     name:'theme'
 
@@ -126,6 +131,42 @@
         pos_hint: {'center_x':0.5,'center_y':0.4}
         on_press:
             app.meal_dinner()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.5,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
+
+<PersonalizationScreen>:
+    name:'personal'
+
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDToolbar:
+            title: 'Personalize'
+            md_bg_color: (1, 0.65, 0, 1)
+
+        ScrollView:
+
+    TextInput:
+        id: input
+        hint_text:'Enter name'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size_hint: 0.6, 0.05
+
+    MDRectangleFlatButton:
+        text: 'Submit'
+        pos_hint: {'center_x':0.5,'center_y':0.4}
+        on_press:
+            root.process()
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0.5, 0, 1)
 
@@ -451,14 +492,20 @@
 
 <DecisionScreen>:
     name: 'decision'
+
+    MDLabel:
+        text: str(root.userName)
+        pos_hint: {'center_x':0.5,'center_y':0.9}
+        halign: 'center'
+
     MDLabel:
         text: str(root.display)
-        pos_hint: {'center_x':0.5,'center_y':0.9}
+        pos_hint: {'center_x':0.5,'center_y':0.8}
         halign: 'center'
 
     Image:
         source: str(root.image)
-        pos_hint: {'center_x':0.5,'center_y':0.64}
+        pos_hint: {'center_x':0.5,'center_y':0.52}
         allow_stretch: True
         keep_ratio: False
         size_hint_y: None
@@ -468,12 +515,12 @@
 
     MDLabel:
         text: str(root.selection)
-        pos_hint: {'center_x':0.5,'center_y':0.4}
+        pos_hint: {'center_x':0.5,'center_y':0.28}
         halign: 'center'
 
     MDRectangleFlatButton:
         text: 'View Suggestion'
-        pos_hint: {'center_x':0.5,'center_y':0.2}
+        pos_hint: {'center_x':0.5,'center_y':0.13}
         on_press:
             root.manager.transition.direction = "left"
             app.next_suggestion()
@@ -484,7 +531,7 @@
 
     MDRectangleFlatButton:
         text: 'Go Back to Home'
-        pos_hint: {'center_x':0.5,'center_y':0.1}
+        pos_hint: {'center_x':0.5,'center_y':0.05}
         on_press:
             root.manager.transition.direction = "right"
             root.manager.current = 'start'
@@ -493,14 +540,20 @@
 
 <CookDecisionScreen>:
     name: 'cookDecision'
+
+    MDLabel:
+        text: str(root.userName)
+        pos_hint: {'center_x':0.5,'center_y':0.9}
+        halign: 'center'
+
     MDLabel:
         text: str(root.display)
-        pos_hint: {'center_x':0.5,'center_y':0.9}
+        pos_hint: {'center_x':0.5,'center_y':0.8}
         halign: 'center'
 
     Image:
         source: str(root.image)
-        pos_hint: {'center_x':0.5,'center_y':0.64}
+        pos_hint: {'center_x':0.5,'center_y':0.52}
         allow_stretch: True
         keep_ratio: False
         size_hint_y: None
@@ -510,31 +563,31 @@
 
     MDLabel:
         text: str(root.selection)
-        pos_hint: {'center_x':0.5,'center_y':0.4}
+        pos_hint: {'center_x':0.5,'center_y':0.28}
         halign: 'center'
 
     MDRectangleFlatButton:
         text: 'Get Recipe'
-        pos_hint: {'center_x':0.5,'center_y':0.3}
+        pos_hint: {'center_x':0.5,'center_y':0.21}
         on_press:
             app.get_link()
         text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
+        md_bg_color: (1, 0.5, 0, 1)
 
     MDRectangleFlatButton:
         text: 'View Suggestion'
-        pos_hint: {'center_x':0.5,'center_y':0.2}
+        pos_hint: {'center_x':0.5,'center_y':0.13}
         on_press:
             root.manager.transition.direction = "left"
             app.next_suggestion()
             app.new_decision()
             app.showFood()
         text_color: (1, 1, 1, 1)
-        md_bg_color: (1, 0, 0, 1)
+        md_bg_color: (1, 0.5, 0, 1)
 
     MDRectangleFlatButton:
         text: 'Go Back to Home'
-        pos_hint: {'center_x':0.5,'center_y':0.1}
+        pos_hint: {'center_x':0.5,'center_y':0.05}
         on_press:
             root.manager.transition.direction = "right"
             root.manager.current = 'start'

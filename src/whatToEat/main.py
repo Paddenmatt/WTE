@@ -2,6 +2,7 @@ from kivy.properties import StringProperty
 from kivymd.app import MDApp
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.core.window import Window
+from kivy.uix.textinput import TextInput
 from Meals import *
 
 import random
@@ -40,12 +41,14 @@ class DecisionScreen(Screen):
     selection = StringProperty()
     display = StringProperty()
     image = StringProperty()
+    userName = StringProperty()
 
 
 class CookDecisionScreen(Screen):
     selection = StringProperty()
     display = StringProperty()
     image = StringProperty()
+    userName = StringProperty()
 
 
 class ThemeScreen(Screen):
@@ -54,6 +57,14 @@ class ThemeScreen(Screen):
 
 class MealTypeScreen(Screen):
     pass
+
+
+class PersonalizationScreen(Screen):
+
+    def process(self):
+        text = self.ids.input.text
+        What2EatApp.name = text
+        print(text)
 
 
 ''' ----------------- END OF SCREEN CLASSES ----------------- '''
@@ -75,6 +86,7 @@ class What2EatApp(MDApp):
     foodDecision = "Blank"
     newImage = "Blank"
     link = "Blank"
+    name = " "
     matchedFoods = []  # Array to store the matched foods
     matchedFoodsAmount = 0
     index = 0
@@ -234,10 +246,17 @@ class What2EatApp(MDApp):
                   user1.question1 + ", " + user1.question2 + ", " + \
                   user1.question3 + ", " + user1.question4 + ", " + \
                   "and " + meal
+
+        if self.name != ' ':
+            userName = "Hi " + self.name + ". Here is what we picked for you to eat based off of your suggestions."
+        else:
+            userName = self.name
+
         if self.matchedFoods[self.index].dining == "cook at home":
             s = CookDecisionScreen(name=name)
             s.selection = selection
             s.image = image
+            s.userName = userName
             s.display = display
             sm.add_widget(s)
             sm.current = name
@@ -245,6 +264,7 @@ class What2EatApp(MDApp):
             s = DecisionScreen(name=name)
             s.selection = selection
             s.image = image
+            s.userName = userName
             s.display = display
             sm.add_widget(s)
             sm.current = name
@@ -264,6 +284,7 @@ class What2EatApp(MDApp):
         sm.add_widget(CookDecisionScreen(name='cookDecision'))
         sm.add_widget(ThemeScreen(name='theme'))
         sm.add_widget(MealTypeScreen(name='mealType'))
+        sm.add_widget(PersonalizationScreen(name='personal'))
 
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Orange"
