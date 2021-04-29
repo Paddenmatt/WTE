@@ -143,14 +143,14 @@ class What2EatApp(MDApp):
         user1.question1 = "dining out"
 
     def cooking_press(self):  # If Cooking at Home is selected, set question 1 to "cooking"
-        user1.question1 = "cook at home"
+        user1.question1 = "dining in"
 
     def opt1_rand(self):  # If Choose For Me is selected, randomly set question 1 value
         num = random.randint(0, 1)
         if num == 0:
             user1.question1 = "dining out"
         else:
-            user1.question1 = "cook at home"
+            user1.question1 = "dining in"
 
     # Functions for Option2Screen
     def sweet_press(self):  # If Sweet is selected, set question 2 to "sweet"
@@ -199,7 +199,7 @@ class What2EatApp(MDApp):
         if num == 0:
             user1.question1 = "dining out"
         else:
-            user1.question1 = "cook at home"
+            user1.question1 = "dining in"
         num = random.randint(0, 1)
         if num == 0:
             user1.question2 = "sweet"
@@ -228,7 +228,7 @@ class What2EatApp(MDApp):
               meal)
 
         for obj in foodList:
-            if (user1.question1 == obj.dining) & (meal == obj.mealType):
+            if (user1.question1 == obj.dining) & (meal == obj.mealType) & (self.matchedFoodsAmount <= 5):
                 if user1.question2 == obj.flavor1:
                     obj.attribute += 1
                 if user1.question3 == obj.health:
@@ -281,7 +281,7 @@ class What2EatApp(MDApp):
         else:
             userName = self.name
 
-        if self.matchedFoods[self.index].dining == "cook at home":
+        if self.matchedFoods[self.index].dining == "dining in":
             s = CookDecisionScreen(name=name)
             s.selection = selection
             s.image = image
