@@ -67,6 +67,34 @@ class PersonalizationScreen(Screen):
         print(text)
 
 
+class AddFoodsScreen(Screen):
+
+    def addFood(self):
+        newName = self.ids.inputName.text
+        What2EatApp.addedName = newName
+        print(newName)
+
+        newType = self.ids.inputType.text
+        What2EatApp.addedType = newType
+        print(newType)
+
+        newDining = self.ids.inputDining.text
+        What2EatApp.addedDining = newDining
+        print(newDining)
+
+        newFlavor = self.ids.inputFlavor.text
+        What2EatApp.addedFlavor = newFlavor
+        print(newFlavor)
+
+        newHealth = self.ids.inputHealth.text
+        What2EatApp.addedHealth = newHealth
+        print(newHealth)
+
+        newWeight = self.ids.inputWeight.text
+        What2EatApp.addedWeight = newWeight
+        print(newWeight)
+
+
 ''' ----------------- END OF SCREEN CLASSES ----------------- '''
 
 
@@ -83,10 +111,11 @@ user1 = User()
 
 
 class What2EatApp(MDApp):
-    foodDecision = "Blank"
-    newImage = "Blank"
-    link = "Blank"
+    foodDecision, newImage, link = "Blank", "Blank", "Blank"
+    addedName, addedType, addedDining = "Blank", "Blank", "Blank"
+    addedFlavor, addedHealth, addedWeight = "Blank", "Blank", "Blank"
     name = " "
+
     matchedFoods = []  # Array to store the matched foods
     matchedFoodsAmount = 0
     index = 0
@@ -273,6 +302,10 @@ class What2EatApp(MDApp):
         print(self.link)
         webbrowser.open(self.link)
 
+    def add_new_foods(self):
+        foodList.append(Fooditem(self.addedName, self.addedType, self.addedDining, self.addedFlavor, self.addedHealth,
+                        self.addedWeight, "img", "No Recipe"))
+
     def build(self):
         # Create the screen manager
         sm.add_widget(StartScreen(name='start'))
@@ -285,6 +318,7 @@ class What2EatApp(MDApp):
         sm.add_widget(ThemeScreen(name='theme'))
         sm.add_widget(MealTypeScreen(name='mealType'))
         sm.add_widget(PersonalizationScreen(name='personal'))
+        sm.add_widget(AddFoodsScreen(name='add'))
 
         self.theme_cls.theme_style = "Light"
         self.theme_cls.primary_palette = "Orange"

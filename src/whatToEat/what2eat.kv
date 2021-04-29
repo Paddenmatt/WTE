@@ -60,6 +60,12 @@
                         on_press:
                             root.manager.current = 'personal'
                             root.manager.transition.direction = "left"
+                    OneLineListItem:
+                        text: 'Add Foods'
+                        on_press:
+                            root.manager.current = 'add'
+                            root.manager.transition.direction = "left"
+
 <ThemeScreen>:
     name:'theme'
 
@@ -87,7 +93,6 @@
             app.dark_theme()
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0.5, 0, 1)
-
 
     MDRectangleFlatButton:
         text: 'Go Back'
@@ -178,6 +183,92 @@
             root.manager.transition.direction = "right"
         text_color: (1, 1, 1, 1)
         md_bg_color: (1, 0.5, 0, 1)
+
+
+<AddFoodsScreen>:
+    name:'add'
+
+    MDBoxLayout:
+        orientation: 'vertical'
+
+        MDToolbar:
+            title: 'Add Foods'
+            md_bg_color: (1, 0.65, 0, 1)
+
+        ScrollView:
+
+    MDLabel:
+        text: "Enter your foods name:"
+        pos_hint: {'center_x': 0.7,'center_y':0.845}
+    TextInput:
+        id: inputName
+        hint_text:'Enter food name'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.8}
+        size_hint: 0.6, 0.05
+
+    MDLabel:
+        text: "Enter your foods meal type:"
+        pos_hint: {'center_x': 0.7,'center_y':0.745}
+    TextInput:
+        id: inputType
+        hint_text:'breakfast / lunch / dinner'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.7}
+        size_hint: 0.6, 0.05
+
+    MDLabel:
+        text: "Enter your foods dining option:"
+        pos_hint: {'center_x': 0.7,'center_y':0.645}
+    TextInput:
+        id: inputDining
+        hint_text:'cook at home / dining out'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.6}
+        size_hint: 0.6, 0.05
+
+    MDLabel:
+        text: "Enter your foods flavor:"
+        pos_hint: {'center_x': 0.7,'center_y':0.545}
+    TextInput:
+        id: inputFlavor
+        hint_text:'sweet / salty'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.5}
+        size_hint: 0.6, 0.05
+
+    MDLabel:
+        text: "Enter your foods health option:"
+        pos_hint: {'center_x': 0.7,'center_y':0.445}
+    TextInput:
+        id: inputHealth
+        hint_text:'healthy / casual'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.4}
+        size_hint: 0.6, 0.05
+
+    MDLabel:
+        text: "Enter your foods weight type:"
+        pos_hint: {'center_x': 0.7,'center_y':0.345}
+    TextInput:
+        id: inputWeight
+        hint_text:'light / heavy'
+        pos_hint: {'center_x': 0.5, 'center_y': 0.3}
+        size_hint: 0.6, 0.05
+
+    MDRectangleFlatButton:
+        text: 'Submit'
+        pos_hint: {'center_x':0.5,'center_y':0.2}
+        on_press:
+            root.addFood()
+            app.add_new_foods()
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
+    MDRectangleFlatButton:
+        text: 'Go Back'
+        pos_hint: {'center_x':0.5,'center_y':0.1}
+        on_press:
+            root.manager.current = 'start'
+            root.manager.transition.direction = "right"
+        text_color: (1, 1, 1, 1)
+        md_bg_color: (1, 0.5, 0, 1)
+
 
 <Option1Screen>:
     name: 'option1'
