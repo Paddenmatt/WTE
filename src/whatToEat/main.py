@@ -143,14 +143,14 @@ class What2EatApp(MDApp):
         user1.question1 = "dining out"
 
     def cooking_press(self):  # If Cooking at Home is selected, set question 1 to "cooking"
-        user1.question1 = "dining in"
+        user1.question1 = "cook at home"
 
     def opt1_rand(self):  # If Choose For Me is selected, randomly set question 1 value
         num = random.randint(0, 1)
         if num == 0:
             user1.question1 = "dining out"
         else:
-            user1.question1 = "dining in"
+            user1.question1 = "cook at home"
 
     # Functions for Option2Screen
     def sweet_press(self):  # If Sweet is selected, set question 2 to "sweet"
@@ -199,7 +199,7 @@ class What2EatApp(MDApp):
         if num == 0:
             user1.question1 = "dining out"
         else:
-            user1.question1 = "dining in"
+            user1.question1 = "cook at home"
         num = random.randint(0, 1)
         if num == 0:
             user1.question2 = "sweet"
@@ -228,7 +228,7 @@ class What2EatApp(MDApp):
               meal)
 
         for obj in foodList:
-            if (user1.question1 == obj.dining) & (meal == obj.mealType) & (self.matchedFoodsAmount <= 5):
+            if (user1.question1 == obj.dining) & (meal == obj.mealType) & (self.matchedFoodsAmount <= 6):
                 if user1.question2 == obj.flavor1:
                     obj.attribute += 1
                 if user1.question3 == obj.health:
@@ -250,7 +250,7 @@ class What2EatApp(MDApp):
 
     def next_suggestion(self):
 
-        if self.index == self.matchedFoodsAmount:
+        if self.index >= 5:
             self.foodDecision = "We are out of suggestions"
 
         elif self.matchedFoodsAmount > 0:
@@ -260,6 +260,7 @@ class What2EatApp(MDApp):
                 self.newImage = self.matchedFoods[self.index].image
                 self.link = self.matchedFoods[self.index].link
                 self.index += 1
+                print(self.index)
 
     # JUNK Terminal Testing (DELETE LATER)
     def showFood(self):
@@ -269,19 +270,23 @@ class What2EatApp(MDApp):
     def new_decision(self):
         global meal
         name = str(time.time())
-        selection = self.foodDecision
-        image = self.newImage
         display = "Your selections are: " + \
                   user1.question1 + ", " + user1.question2 + ", " + \
                   user1.question3 + ", " + user1.question4 + ", " + \
                   "and " + meal
+        if self.foodDecision == "We are out of suggestions":
+            selection = self.foodDecision
+            image = "Blank"
+        else:
+            selection = self.foodDecision
+            image = self.newImage
 
         if self.name != ' ':
             userName = "Hi " + self.name + ". Here is what we picked for you to eat based off of your suggestions."
         else:
             userName = self.name
 
-        if self.matchedFoods[self.index].dining == "dining in":
+        if self.matchedFoods[self.index].dining == "cook at home":
             s = CookDecisionScreen(name=name)
             s.selection = selection
             s.image = image

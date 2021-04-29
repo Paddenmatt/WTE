@@ -57,36 +57,36 @@ foodList.append(Fooditem("Hamburger", "lunch", "dining out","salty", "casual", "
 foodList.append(Fooditem("Spaghetti", "lunch", "dining out","salty", "casual",  "full", "images/spaghetti.jpg", "No Recipe"))
 foodList.append(Fooditem("Casserole", "lunch", "dining out","salty", "casual",  "full", "images/casserole.jpg", "No Recipe"))
 
-#===============================Lunch "dining in"===============================#
+#===============================Lunch "cook at home"===============================#
 
-foodList.append(Fooditem("Strawberry Cake", "lunch", "dining in", "sweet", "healthy", "full", "images/strawberrycake.jpg", "https://www.allrecipes.com/recipe/7333/strawberry-cake-i/"))
-foodList.append(Fooditem("Sweet Crepes", "lunch", "dining in", "sweet", "healthy", "full", "images/sweetcrepes.jpg", "https://www.allrecipes.com/recipe/280785/sweet-peach-crepe-filling/"))
-foodList.append(Fooditem("Muffins", "lunch", "dining in", "sweet", "healthy", "full", "images/muffins.jpg", "https://www.allrecipes.com/recipe/229968/judys-pumpkin-muffins/"))
+foodList.append(Fooditem("Strawberry Cake", "lunch", "cook at home", "sweet", "healthy", "full", "images/strawberrycake.jpg", "https://www.allrecipes.com/recipe/7333/strawberry-cake-i/"))
+foodList.append(Fooditem("Sweet Crepes", "lunch", "cook at home", "sweet", "healthy", "full", "images/sweetcrepes.jpg", "https://www.allrecipes.com/recipe/280785/sweet-peach-crepe-filling/"))
+foodList.append(Fooditem("Muffins", "lunch", "cook at home", "sweet", "healthy", "full", "images/muffins.jpg", "https://www.allrecipes.com/recipe/229968/judys-pumpkin-muffins/"))
 
-foodList.append(Fooditem("Cupcakes", "lunch", "dining in","sweet","casual","light", "images/icecream.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
-foodList.append(Fooditem("Boba", "lunch", "dining in","sweet","casual","light", "images/boba.jpg", "https://www.allrecipes.com/recipe/266015/boba-coconut-milk-black-tea-with-tapioca-pearls/"))
+foodList.append(Fooditem("Cupcakes", "lunch", "cook at home","sweet","casual","light", "images/icecream.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
+foodList.append(Fooditem("Boba", "lunch", "cook at home","sweet","casual","light", "images/boba.jpg", "https://www.allrecipes.com/recipe/266015/boba-coconut-milk-black-tea-with-tapioca-pearls/"))
 
-foodList.append(Fooditem("Banana Split", "lunch", "dining in", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/8344/banana-split-cake-iii/"))
-foodList.append(Fooditem("Cheesecake", "lunch", "dining in", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/7700/autumn-cheesecake/"))
-foodList.append(Fooditem("Peach Cobbler", "lunch", "dining in", "sweet", "casual", "full", "images/peachcobbler.jpg", "https://www.allrecipes.com/recipe/19044/easy-peach-cobbler/"))
+foodList.append(Fooditem("Banana Split", "lunch", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/8344/banana-split-cake-iii/"))
+foodList.append(Fooditem("Cheesecake", "lunch", "cook at home", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/7700/autumn-cheesecake/"))
+foodList.append(Fooditem("Peach Cobbler", "lunch", "cook at home", "sweet", "casual", "full", "images/peachcobbler.jpg", "https://www.allrecipes.com/recipe/19044/easy-peach-cobbler/"))
 
-foodList.append(Fooditem("Baked Salmon", "lunch", "dining in", "salty", "healthy", "light", "images/bakedsalmon.jpeg", "https://www.allrecipes.com/recipe/22538/baked-salmon-fillets-dijon/"))
-foodList.append(Fooditem("Grilled Chicken", "lunch", "dining in","salty",  "healthy", "light", "images/grilledchicken.jpg", "https://www.allrecipes.com/recipe/256527/grilled-chicken-thighs-and-marinade/"))
-foodList.append(Fooditem("Grilled Salmon", "lunch", "dining in","salty", "healthy",  "light", "images/grilledsalmon.jpg", "https://www.allrecipes.com/recipe/48855/grilled-salmon-kyoto/"))
+foodList.append(Fooditem("Baked Salmon", "lunch", "cook at home", "salty", "healthy", "light", "images/bakedsalmon.jpeg", "https://www.allrecipes.com/recipe/22538/baked-salmon-fillets-dijon/"))
+foodList.append(Fooditem("Grilled Chicken", "lunch", "cook at home","salty",  "healthy", "light", "images/grilledchicken.jpg", "https://www.allrecipes.com/recipe/256527/grilled-chicken-thighs-and-marinade/"))
+foodList.append(Fooditem("Grilled Salmon", "lunch", "cook at home","salty", "healthy",  "light", "images/grilledsalmon.jpg", "https://www.allrecipes.com/recipe/48855/grilled-salmon-kyoto/"))
 
-foodList.append(Fooditem("Meatloaf", "lunch", "dining in", "salty", "healthy", "full", "images/meatloaf.jpg", "https://www.allrecipes.com/recipe/268958/skinny-meatloaf/"))
+foodList.append(Fooditem("Meatloaf", "lunch", "cook at home", "salty", "healthy", "full", "images/meatloaf.jpg", "https://www.allrecipes.com/recipe/268958/skinny-meatloaf/"))
 
-foodList.append(Fooditem("Fries", "lunch", "dining in", "salty", "casual", "light", "images/fries.jpg", "https://www.allrecipes.com/recipe/35963/french-fried-potatoes/"))
-foodList.append(Fooditem("Hot Dog","lunch", "dining in","salty", "casual", "light", "images/hotdog.jpg", "https://www.allrecipes.com/recipe/24713/texas-hotdog-sauce/"))
-foodList.append(Fooditem("Ravioli", "lunch", "dining in", "salty", "healthy", "light", "images/ravioli.jpg", "https://www.allrecipes.com/recipe/219174/easy-butternut-squash-ravioli/"))
-foodList.append(Fooditem("Wings", "lunch", "dining in", "salty", "casual", "light", "images/wings.jpg", "https://www.allrecipes.com/recipe/260032/simple-grilled-hot-wings/"))
-foodList.append(Fooditem("Fried Mozzarella", "lunch", "dining in", "salty", "casual", "light", "images/friedmozzarella.jpg", "https://www.allrecipes.com/recipe/278265/fried-mozzarella-puffs/"))
+foodList.append(Fooditem("Fries", "lunch", "cook at home", "salty", "casual", "light", "images/fries.jpg", "https://www.allrecipes.com/recipe/35963/french-fried-potatoes/"))
+foodList.append(Fooditem("Hot Dog","lunch", "cook at home","salty", "casual", "light", "images/hotdog.jpg", "https://www.allrecipes.com/recipe/24713/texas-hotdog-sauce/"))
+foodList.append(Fooditem("Ravioli", "lunch", "cook at home", "salty", "healthy", "light", "images/ravioli.jpg", "https://www.allrecipes.com/recipe/219174/easy-butternut-squash-ravioli/"))
+foodList.append(Fooditem("Wings", "lunch", "cook at home", "salty", "casual", "light", "images/wings.jpg", "https://www.allrecipes.com/recipe/260032/simple-grilled-hot-wings/"))
+foodList.append(Fooditem("Fried Mozzarella", "lunch", "cook at home", "salty", "casual", "light", "images/friedmozzarella.jpg", "https://www.allrecipes.com/recipe/278265/fried-mozzarella-puffs/"))
 
-foodList.append(Fooditem("Nachos", "lunch", "dining in", "salty", "casual", "full", "images/nachos.jpeg", "https://www.allrecipes.com/recipe/240380/chili-nachos/"))
-foodList.append(Fooditem("Burrito", "lunch", "dining in", "salty", "casual", "full", "images/burrito.jpg", "https://www.allrecipes.com/recipe/256301/carne-asada-breakfast-burrito/"))
-foodList.append(Fooditem("Hamburger", "lunch", "dining in","salty", "casual", "full", "images/hamburger.jpg", "https://www.allrecipes.com/recipe/177115/feta-stuffed-hamburgers/"))
-foodList.append(Fooditem("Spaghetti", "lunch", "dining in", "salty", "casual", "full", "images/spaghetti.jpg", "https://www.allrecipes.com/recipe/19905/dads-spaghetti/"))
-foodList.append(Fooditem("Casserole", "lunch", "dining in", "salty", "casual", "full", "images/casserole.jpg", "https://www.allrecipes.com/recipe/275829/jalapeno-creamed-corn-casserole/"))
+foodList.append(Fooditem("Nachos", "lunch", "cook at home", "salty", "casual", "full", "images/nachos.jpeg", "https://www.allrecipes.com/recipe/240380/chili-nachos/"))
+foodList.append(Fooditem("Burrito", "lunch", "cook at home", "salty", "casual", "full", "images/burrito.jpg", "https://www.allrecipes.com/recipe/256301/carne-asada-breakfast-burrito/"))
+foodList.append(Fooditem("Hamburger", "lunch", "cook at home","salty", "casual", "full", "images/hamburger.jpg", "https://www.allrecipes.com/recipe/177115/feta-stuffed-hamburgers/"))
+foodList.append(Fooditem("Spaghetti", "lunch", "cook at home", "salty", "casual", "full", "images/spaghetti.jpg", "https://www.allrecipes.com/recipe/19905/dads-spaghetti/"))
+foodList.append(Fooditem("Casserole", "lunch", "cook at home", "salty", "casual", "full", "images/casserole.jpg", "https://www.allrecipes.com/recipe/275829/jalapeno-creamed-corn-casserole/"))
 
 #=========================================Dinner=======================================#
 
@@ -130,40 +130,40 @@ foodList.append(Fooditem("Hamburger", "dinner", "dining out", "salty", "casual",
 foodList.append(Fooditem("Spaghetti", "dinner", "dining out", "salty", "casual", "full", "images/spaghetti.jpg", "No Recipe"))
 foodList.append(Fooditem("Casserole", "dinner", "dining out", "salty", "casual", "full", "images/casserole.jpg", "No Recipe"))
 
-#=====================================Dinner "dining in"===================================#
+#=====================================Dinner "cook at home"===================================#
 
-foodList.append(Fooditem("Fruit Smoothie", "dinner", "dining in", "sweet", "healthy", "light", "images/fruitsmoothies.jpg", "https://www.allrecipes.com/recipe/87961/triple-threat-fruit-smoothie/"))
+foodList.append(Fooditem("Fruit Smoothie", "dinner", "cook at home", "sweet", "healthy", "light", "images/fruitsmoothies.jpg", "https://www.allrecipes.com/recipe/87961/triple-threat-fruit-smoothie/"))
 
-foodList.append(Fooditem("Strawberry Cake", "dinner", "dining in", "sweet", "healthy", "full", "images/strawberrycake.jpg", "https://www.allrecipes.com/recipe/7333/strawberry-cake-i/"))
-foodList.append(Fooditem("Muffins", "dinner", "dining in", "sweet", "healthy", "full", "images/muffins.jpg", "https://www.allrecipes.com/recipe/229968/judys-pumpkin-muffins/"))
+foodList.append(Fooditem("Strawberry Cake", "dinner", "cook at home", "sweet", "healthy", "full", "images/strawberrycake.jpg", "https://www.allrecipes.com/recipe/7333/strawberry-cake-i/"))
+foodList.append(Fooditem("Muffins", "dinner", "cook at home", "sweet", "healthy", "full", "images/muffins.jpg", "https://www.allrecipes.com/recipe/229968/judys-pumpkin-muffins/"))
 
-foodList.append(Fooditem("Cupcakes", "dinner", "dining in", "sweet", "casual", "light", "images/cupcakes.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
-foodList.append(Fooditem("Croissants", "dinner", "dining in", "sweet", "casual", "light", "images/croissant.jpg", "https://www.allrecipes.com/recipe/240268/chocolate-croissant-bread-pudding/"))
+foodList.append(Fooditem("Cupcakes", "dinner", "cook at home", "sweet", "casual", "light", "images/cupcakes.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
+foodList.append(Fooditem("Croissants", "dinner", "cook at home", "sweet", "casual", "light", "images/croissant.jpg", "https://www.allrecipes.com/recipe/240268/chocolate-croissant-bread-pudding/"))
 
-foodList.append(Fooditem("Banana Split", "dinner", "dining in", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/8344/banana-split-cake-iii/"))
-foodList.append(Fooditem("Cheesecake", "dinner", "dining in", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/7700/autumn-cheesecake/"))
-foodList.append(Fooditem("Peach Cobbler", "dinner", "dining in", "sweet", "casual", "full", "images/peachcobbler.jpg", "https://www.allrecipes.com/recipe/19044/easy-peach-cobbler/"))
+foodList.append(Fooditem("Banana Split", "dinner", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/8344/banana-split-cake-iii/"))
+foodList.append(Fooditem("Cheesecake", "dinner", "cook at home", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/7700/autumn-cheesecake/"))
+foodList.append(Fooditem("Peach Cobbler", "dinner", "cook at home", "sweet", "casual", "full", "images/peachcobbler.jpg", "https://www.allrecipes.com/recipe/19044/easy-peach-cobbler/"))
 
-foodList.append(Fooditem("Baked Salmon", "dinner", "dining in", "salty", "healthy", "light", "images/bakedsalmon.jpeg", "https://www.allrecipes.com/recipe/22538/baked-salmon-fillets-dijon/"))
-foodList.append(Fooditem("Grilled Chicken", "dinner", "dining in", "salty", "healthy", "light", "images/grilledchicken.jpg", "https://www.allrecipes.com/recipe/256527/grilled-chicken-thighs-and-marinade/"))
-foodList.append(Fooditem("Grilled Salmon", "dinner", "dining in", "salty", "healthy", "light", "images/grilledsalmon.jpg", "https://www.allrecipes.com/recipe/48855/grilled-salmon-kyoto/"))
+foodList.append(Fooditem("Baked Salmon", "dinner", "cook at home", "salty", "healthy", "light", "images/bakedsalmon.jpeg", "https://www.allrecipes.com/recipe/22538/baked-salmon-fillets-dijon/"))
+foodList.append(Fooditem("Grilled Chicken", "dinner", "cook at home", "salty", "healthy", "light", "images/grilledchicken.jpg", "https://www.allrecipes.com/recipe/256527/grilled-chicken-thighs-and-marinade/"))
+foodList.append(Fooditem("Grilled Salmon", "dinner", "cook at home", "salty", "healthy", "light", "images/grilledsalmon.jpg", "https://www.allrecipes.com/recipe/48855/grilled-salmon-kyoto/"))
 
-foodList.append(Fooditem("Steak", "dinner", "dining in", "salty", "healthy", "full", "images/steak.jpg", "https://www.allrecipes.com/recipe/258804/butchers-steak-hanger-steak/"))
-foodList.append(Fooditem("Omelette", "dinner", "dining in", "salty", "healthy", "full", "images/omelet.jpg", "https://www.allrecipes.com/recipe/257918/chef-johns-french-omelette/"))
-foodList.append(Fooditem("Pot Roast", "dinner", "dining in", "salty", "healthy", "full", "images/potroast.jpg", "https://www.allrecipes.com/recipe/232756/pot-roast/"))
-foodList.append(Fooditem("Meatloaf", "dinner", "dining in", "salty", "healthy", "full", "images/meatloaf.jpg", "No Recipe"))
+foodList.append(Fooditem("Steak", "dinner", "cook at home", "salty", "healthy", "full", "images/steak.jpg", "https://www.allrecipes.com/recipe/258804/butchers-steak-hanger-steak/"))
+foodList.append(Fooditem("Omelette", "dinner", "cook at home", "salty", "healthy", "full", "images/omelet.jpg", "https://www.allrecipes.com/recipe/257918/chef-johns-french-omelette/"))
+foodList.append(Fooditem("Pot Roast", "dinner", "cook at home", "salty", "healthy", "full", "images/potroast.jpg", "https://www.allrecipes.com/recipe/232756/pot-roast/"))
+foodList.append(Fooditem("Meatloaf", "dinner", "cook at home", "salty", "healthy", "full", "images/meatloaf.jpg", "No Recipe"))
 
-foodList.append(Fooditem("Fries", "dinner", "dining in", "salty", "casual", "light", "images/fries.jpg", "https://www.allrecipes.com/recipe/35963/french-fried-potatoes/"))
-foodList.append(Fooditem("Hot Dog", "dinner", "dining in", "salty", "casual", "light", "images/hotdog.jpg", "https://www.allrecipes.com/recipe/24713/texas-hotdog-sauce/"))
-foodList.append(Fooditem("Ravioli", "dinner", "dining in", "salty", "casual", "light", "images/ravioli.jpg", "https://www.allrecipes.com/recipe/219174/easy-butternut-squash-ravioli/"))
-foodList.append(Fooditem("Wings", "dinner", "dining in", "salty", "casual", "light", "images/wings.jpg", "https://www.allrecipes.com/recipe/260032/simple-grilled-hot-wings/"))
-foodList.append(Fooditem("Noodles", "dinner", "dining in", "salty", "casual", "light", "images/noodles.jpg", "https://www.allrecipes.com/recipe/222405/polish-noodles-cottage-cheese-and-noodles/"))
+foodList.append(Fooditem("Fries", "dinner", "cook at home", "salty", "casual", "light", "images/fries.jpg", "https://www.allrecipes.com/recipe/35963/french-fried-potatoes/"))
+foodList.append(Fooditem("Hot Dog", "dinner", "cook at home", "salty", "casual", "light", "images/hotdog.jpg", "https://www.allrecipes.com/recipe/24713/texas-hotdog-sauce/"))
+foodList.append(Fooditem("Ravioli", "dinner", "cook at home", "salty", "casual", "light", "images/ravioli.jpg", "https://www.allrecipes.com/recipe/219174/easy-butternut-squash-ravioli/"))
+foodList.append(Fooditem("Wings", "dinner", "cook at home", "salty", "casual", "light", "images/wings.jpg", "https://www.allrecipes.com/recipe/260032/simple-grilled-hot-wings/"))
+foodList.append(Fooditem("Noodles", "dinner", "cook at home", "salty", "casual", "light", "images/noodles.jpg", "https://www.allrecipes.com/recipe/222405/polish-noodles-cottage-cheese-and-noodles/"))
 
-foodList.append(Fooditem("Nachos", "dinner", "dining in", "salty", "casual", "full", "images/nachos.jpg", "https://www.allrecipes.com/recipe/240380/chili-nachos/"))
-foodList.append(Fooditem("Burrito", "dinner", "dining in", "salty", "casual", "full", "images/burrito.jpg", "https://www.allrecipes.com/recipe/256301/carne-asada-breakfast-burrito/"))
-foodList.append(Fooditem("Hamburger", "dinner", "dining in", "salty", "casual", "full", "images/hamburger.jpg", "https://www.allrecipes.com/recipe/177115/feta-stuffed-hamburgers/"))
-foodList.append(Fooditem("Spaghetti", "dinner", "dining in", "salty", "casual", "full", "images/spaghetti.jpg", "https://www.allrecipes.com/recipe/19905/dads-spaghetti/"))
-foodList.append(Fooditem("Casserole", "dinner", "dining in", "salty", "casual", "full", "images/casserole.jpg", "https://www.allrecipes.com/recipe/275829/jalapeno-creamed-corn-casserole/"))
+foodList.append(Fooditem("Nachos", "dinner", "cook at home", "salty", "casual", "full", "images/nachos.jpg", "https://www.allrecipes.com/recipe/240380/chili-nachos/"))
+foodList.append(Fooditem("Burrito", "dinner", "cook at home", "salty", "casual", "full", "images/burrito.jpg", "https://www.allrecipes.com/recipe/256301/carne-asada-breakfast-burrito/"))
+foodList.append(Fooditem("Hamburger", "dinner", "cook at home", "salty", "casual", "full", "images/hamburger.jpg", "https://www.allrecipes.com/recipe/177115/feta-stuffed-hamburgers/"))
+foodList.append(Fooditem("Spaghetti", "dinner", "cook at home", "salty", "casual", "full", "images/spaghetti.jpg", "https://www.allrecipes.com/recipe/19905/dads-spaghetti/"))
+foodList.append(Fooditem("Casserole", "dinner", "cook at home", "salty", "casual", "full", "images/casserole.jpg", "https://www.allrecipes.com/recipe/275829/jalapeno-creamed-corn-casserole/"))
 
 #====================================Breakfast==================================#
 
@@ -195,29 +195,29 @@ foodList.append(Fooditem("Miso Soup", "breakfast", "dining out", "salty", "casua
 foodList.append(Fooditem("Bacon", "breakfast", "dining out", "salty", "casual", "full", "images/bacon.jpg", "No Recipe"))
 foodList.append(Fooditem("Breakfast Burrito", "breakfast", "dining out", "salty", "casual", "full", "images/breakfastburrito.jpg", "No Recipe"))
 
-#=========================================Breakfast "dining in"=========================================#
+#=========================================Breakfast "cook at home"=========================================#
 
-foodList.append(Fooditem("Yogurt", "breakfast", "dining in", "sweet", "healthy", "light", "images/yogurt.jpg", "https://www.allrecipes.com/recipe/262645/instant-pot-greek-yogurt/"))
-foodList.append(Fooditem("Parfait", "breakfast", "dining in", "sweet", "healthy", "light", "images/parfait.jpg", "https://www.allrecipes.com/recipe/15592/pumpkin-parfait/"))
+foodList.append(Fooditem("Yogurt", "breakfast", "cook at home", "sweet", "healthy", "light", "images/yogurt.jpg", "https://www.allrecipes.com/recipe/262645/instant-pot-greek-yogurt/"))
+foodList.append(Fooditem("Parfait", "breakfast", "cook at home", "sweet", "healthy", "light", "images/parfait.jpg", "https://www.allrecipes.com/recipe/15592/pumpkin-parfait/"))
 
-foodList.append(Fooditem("Acai Bowl", "breakfast", "dining in", "sweet", "healthy", "full", "images/acaibowl.jpg", "https://www.allrecipes.com/recipe/244353/acai-bowl/"))  
-foodList.append(Fooditem("Protein Smoothie", "breakfast", "dining in", "sweet", "healthy", "full", "images/proteinsmoothie.jpg", "https://www.allrecipes.com/recipe/245552/power-9-protein-smoothie/"))
-foodList.append(Fooditem("Oatmeal", "breakfast", "dining in", "sweet", "healthy", "full", "images/oatmeal.jpg", "https://www.allrecipes.com/recipe/246423/power-oatmeal/"))
+foodList.append(Fooditem("Acai Bowl", "breakfast", "cook at home", "sweet", "healthy", "full", "images/acaibowl.jpg", "https://www.allrecipes.com/recipe/244353/acai-bowl/"))  
+foodList.append(Fooditem("Protein Smoothie", "breakfast", "cook at home", "sweet", "healthy", "full", "images/proteinsmoothie.jpg", "https://www.allrecipes.com/recipe/245552/power-9-protein-smoothie/"))
+foodList.append(Fooditem("Oatmeal", "breakfast", "cook at home", "sweet", "healthy", "full", "images/oatmeal.jpg", "https://www.allrecipes.com/recipe/246423/power-oatmeal/"))
 
-foodList.append(Fooditem("Poptarts", "breakfast", "dining in", "sweet", "casual", "light", "images/poptart.jpg", "https://www.cookingclassy.com/homemade-pop-tarts/")) 
-foodList.append(Fooditem("Donuts", "breakfast", "dining in", "sweet", "casual", "light", "images/donut.jpg", "https://www.allrecipes.com/recipe/276267/baked-chocolate-donuts/")) 
-foodList.append(Fooditem("Cereal", "breakfast", "dining in", "sweet", "casual", "light", "images/cereal.jpg", "https://www.allrecipes.com/recipe/23927/crispy-cereal-mix/"))
+foodList.append(Fooditem("Poptarts", "breakfast", "cook at home", "sweet", "casual", "light", "images/poptart.jpg", "https://www.cookingclassy.com/homemade-pop-tarts/")) 
+foodList.append(Fooditem("Donuts", "breakfast", "cook at home", "sweet", "casual", "light", "images/donut.jpg", "https://www.allrecipes.com/recipe/276267/baked-chocolate-donuts/")) 
+foodList.append(Fooditem("Cereal", "breakfast", "cook at home", "sweet", "casual", "light", "images/cereal.jpg", "https://www.allrecipes.com/recipe/23927/crispy-cereal-mix/"))
 
-foodList.append(Fooditem("Buttered Toast", "breakfast", "dining in", "salty", "healthy", "light", "images/butteredtoast.jpg", "https://www.allrecipes.com/recipe/213730/peanut-butter-french-toast/"))
-foodList.append(Fooditem("Crepes", "breakfast", "dining in", "salty", "healthy", "light", "images/savorycrepes.jpg", "https://www.allrecipes.com/recipe/280785/sweet-peach-crepe-filling/"))
-foodList.append(Fooditem("Waffles","breakfast", "dining in", "salty", "healthy", "light", "images/waffles.jpg", "https://www.allrecipes.com/recipe/269426/eggnog-waffles/"))
+foodList.append(Fooditem("Buttered Toast", "breakfast", "cook at home", "salty", "healthy", "light", "images/butteredtoast.jpg", "https://www.allrecipes.com/recipe/213730/peanut-butter-french-toast/"))
+foodList.append(Fooditem("Crepes", "breakfast", "cook at home", "salty", "healthy", "light", "images/savorycrepes.jpg", "https://www.allrecipes.com/recipe/280785/sweet-peach-crepe-filling/"))
+foodList.append(Fooditem("Waffles","breakfast", "cook at home", "salty", "healthy", "light", "images/waffles.jpg", "https://www.allrecipes.com/recipe/269426/eggnog-waffles/"))
 
-foodList.append(Fooditem("Salmon Toast", "breakfast", "dining in", "salty", "healthy", "full", "images/salmontoast.jpg", "https://www.allrecipes.com/recipe/240097/smoked-salmon-french-toast-sandwich/"))
-foodList.append(Fooditem("Omelette", "breakfast", "dining in", "salty", "healthy", "full", "images/healthyomelet.jpg", "https://easychickenrecipes.com/healthy-omelette-recipe/"))
+foodList.append(Fooditem("Salmon Toast", "breakfast", "cook at home", "salty", "healthy", "full", "images/salmontoast.jpg", "https://www.allrecipes.com/recipe/240097/smoked-salmon-french-toast-sandwich/"))
+foodList.append(Fooditem("Omelette", "breakfast", "cook at home", "salty", "healthy", "full", "images/healthyomelet.jpg", "https://easychickenrecipes.com/healthy-omelette-recipe/"))
 
-foodList.append(Fooditem("Miso Soup", "breakfast", "dining in", "salty", "casual", "light", "images/misosoup.jpg", "https://www.allrecipes.com/recipe/276865/vegan-miso-soup/"))
-foodList.append(Fooditem("Sausages", "breakfast", "dining in", "salty", "casual", "light", "images/sausages.jpg", "https://www.allrecipes.com/recipe/22343/sausages-in-onion-gravy/"))
+foodList.append(Fooditem("Miso Soup", "breakfast", "cook at home", "salty", "casual", "light", "images/misosoup.jpg", "https://www.allrecipes.com/recipe/276865/vegan-miso-soup/"))
+foodList.append(Fooditem("Sausages", "breakfast", "cook at home", "salty", "casual", "light", "images/sausages.jpg", "https://www.allrecipes.com/recipe/22343/sausages-in-onion-gravy/"))
 
-foodList.append(Fooditem("Omelette", "breakfast", "dining in", "salty", "casual", "full", "images/omelet.jpg", "https://www.allrecipes.com/recipe/257918/chef-johns-french-omelette/"))
-foodList.append(Fooditem("Bacon", "breakfast", "dining in", "salty", "casual", "full", "images/bacon.jpg", "https://www.allrecipes.com/recipe/50311/bacon/"))
-foodList.append(Fooditem("Breakfast Burrito", "breakfast", "dining in", "salty", "casual", "full", "images/breakfastburrito.jpg", "https://www.allrecipes.com/recipe/274779/avocado-and-egg-breakfast-burrito/"))
+foodList.append(Fooditem("Omelette", "breakfast", "cook at home", "salty", "casual", "full", "images/omelet.jpg", "https://www.allrecipes.com/recipe/257918/chef-johns-french-omelette/"))
+foodList.append(Fooditem("Bacon", "breakfast", "cook at home", "salty", "casual", "full", "images/bacon.jpg", "https://www.allrecipes.com/recipe/50311/bacon/"))
+foodList.append(Fooditem("Breakfast Burrito", "breakfast", "cook at home", "salty", "casual", "full", "images/breakfastburrito.jpg", "https://www.allrecipes.com/recipe/274779/avocado-and-egg-breakfast-burrito/"))
