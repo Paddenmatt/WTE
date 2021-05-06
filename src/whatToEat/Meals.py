@@ -60,14 +60,18 @@ foodList.append(Fooditem("Casserole", "lunch", "dining out","salty", "casual",  
 #===============================Lunch "cook at home"===============================#
 
 foodList.append(Fooditem("Strawberry Cake", "lunch", "cook at home", "sweet", "healthy", "full", "images/strawberrycake.jpg", "https://www.allrecipes.com/recipe/272783/red-velvet-strawberry-cake/"))
-foodList.append(Fooditem("Sweet Crepes", "lunch", "cook at home", "sweet", "healthy", "full", "images/sweetcrepes.jpg", "https://www.allrecipes.com/recipe/280785/sweet-peach-crepe-filling/"))
+<<<<<<< HEAD
+foodList.append(Fooditem("Sweet Crepes", "lunch", "cook at home", "sweet", "healthy", "full", "images/sweetcrepes.jpg", "https://www.allrecipes.com/recipe/19037/dessert-crepes/"))
+=======
 foodList.append(Fooditem("Muffins", "lunch", "cook at home", "sweet", "healthy", "full", "images/muffins.jpg", "https://www.allrecipes.com/recipe/229968/judys-pumpkin-muffins/"))
 
 foodList.append(Fooditem("Cupcakes", "lunch", "cook at home","sweet","casual","light", "images/cupcakes.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
 foodList.append(Fooditem("Boba", "lunch", "cook at home","sweet","casual","light", "images/boba.jpg", "https://www.allrecipes.com/recipe/266015/boba-coconut-milk-black-tea-with-tapioca-pearls/"))
 
-foodList.append(Fooditem("Banana Split", "lunch", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/8344/banana-split-cake-iii/"))
+<<<<<<< HEAD
+foodList.append(Fooditem("Banana Split", "lunch", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/276063/homemade-banana-split/"))
 foodList.append(Fooditem("Cheesecake", "lunch", "cook at home", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/25958/basic-cheesecake/"))
+=======
 foodList.append(Fooditem("Peach Cobbler", "lunch", "cook at home", "sweet", "casual", "full", "images/peachcobbler.jpg", "https://www.allrecipes.com/recipe/19044/easy-peach-cobbler/"))
 
 foodList.append(Fooditem("Baked Salmon", "lunch", "cook at home", "salty", "healthy", "light", "images/bakedsalmon.jpeg", "https://www.allrecipes.com/recipe/22538/baked-salmon-fillets-dijon/"))
@@ -140,8 +144,13 @@ foodList.append(Fooditem("Muffins", "dinner", "cook at home", "sweet", "healthy"
 foodList.append(Fooditem("Cupcakes", "dinner", "cook at home", "sweet", "casual", "light", "images/cupcakes.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
 foodList.append(Fooditem("Croissants", "dinner", "cook at home", "sweet", "casual", "light", "images/croissant.jpg", "https://www.allrecipes.com/recipe/240268/chocolate-croissant-bread-pudding/"))
 
-foodList.append(Fooditem("Banana Split", "dinner", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/8344/banana-split-cake-iii/"))
+<<<<<<< HEAD
+foodList.append(Fooditem("Banana Split", "dinner", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/276063/homemade-banana-split/"))
 foodList.append(Fooditem("Cheesecake", "dinner", "cook at home", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/25958/basic-cheesecake/"))
+=======
+foodList.append(Fooditem("Banana Split", "dinner", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/276063/homemade-banana-split/"))
+foodList.append(Fooditem("Cheesecake", "dinner", "cook at home", "sweet", "casual", "full", "images/cheesecake.jpg", "https://sallysbakingaddiction.com/classic-cheesecake/"))
+>>>>>>> f4afdff6af5b8a3881da8790113f329ba7dbef96
 foodList.append(Fooditem("Peach Cobbler", "dinner", "cook at home", "sweet", "casual", "full", "images/peachcobbler.jpg", "https://www.allrecipes.com/recipe/19044/easy-peach-cobbler/"))
 
 foodList.append(Fooditem("Baked Salmon", "dinner", "cook at home", "salty", "healthy", "light", "images/bakedsalmon.jpeg", "https://www.allrecipes.com/recipe/22538/baked-salmon-fillets-dijon/"))
@@ -209,7 +218,7 @@ foodList.append(Fooditem("Donuts", "breakfast", "cook at home", "sweet", "casual
 foodList.append(Fooditem("Cereal", "breakfast", "cook at home", "sweet", "casual", "light", "images/cereal.jpg", "https://www.allrecipes.com/recipe/23927/crispy-cereal-mix/"))
 
 foodList.append(Fooditem("Buttered Toast", "breakfast", "cook at home", "salty", "healthy", "light", "images/butteredtoast.jpg", "https://www.allrecipes.com/recipe/213730/peanut-butter-french-toast/"))
-foodList.append(Fooditem("Crepes", "breakfast", "cook at home", "salty", "healthy", "light", "images/savorycrepes.jpg", "https://www.allrecipes.com/recipe/280785/sweet-peach-crepe-filling/"))
+foodList.append(Fooditem("Crepes", "breakfast", "cook at home", "salty", "healthy", "light", "images/savorycrepes.jpg", "https://www.allrecipes.com/recipe/19037/dessert-crepes/"))
 foodList.append(Fooditem("Waffles","breakfast", "cook at home", "salty", "healthy", "light", "images/waffles.jpg", "https://www.allrecipes.com/recipe/269426/eggnog-waffles/"))
 
 foodList.append(Fooditem("Salmon Toast", "breakfast", "cook at home", "salty", "healthy", "full", "images/salmontoast.jpg", "https://www.allrecipes.com/recipe/240097/smoked-salmon-french-toast-sandwich/"))
