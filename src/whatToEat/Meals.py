@@ -60,15 +60,12 @@ foodList.append(Fooditem("Casserole", "lunch", "dining out","salty", "casual",  
 #===============================Lunch "cook at home"===============================#
 
 foodList.append(Fooditem("Strawberry Cake", "lunch", "cook at home", "sweet", "healthy", "full", "images/strawberrycake.jpg", "https://www.allrecipes.com/recipe/272783/red-velvet-strawberry-cake/"))
-<<<<<<< HEAD
 foodList.append(Fooditem("Sweet Crepes", "lunch", "cook at home", "sweet", "healthy", "full", "images/sweetcrepes.jpg", "https://www.allrecipes.com/recipe/19037/dessert-crepes/"))
 =======
 foodList.append(Fooditem("Muffins", "lunch", "cook at home", "sweet", "healthy", "full", "images/muffins.jpg", "https://www.allrecipes.com/recipe/229968/judys-pumpkin-muffins/"))
 
 foodList.append(Fooditem("Cupcakes", "lunch", "cook at home","sweet","casual","light", "images/cupcakes.jpg", "https://www.allrecipes.com/recipe/240279/applesauce-filled-cupcakes/"))
 foodList.append(Fooditem("Boba", "lunch", "cook at home","sweet","casual","light", "images/boba.jpg", "https://www.allrecipes.com/recipe/266015/boba-coconut-milk-black-tea-with-tapioca-pearls/"))
-
-<<<<<<< HEAD
 foodList.append(Fooditem("Banana Split", "lunch", "cook at home", "sweet", "casual", "full", "images/bananasplit.jpg", "https://www.allrecipes.com/recipe/276063/homemade-banana-split/"))
 foodList.append(Fooditem("Cheesecake", "lunch", "cook at home", "sweet", "casual", "full", "images/cheesecake.jpg", "https://www.allrecipes.com/recipe/25958/basic-cheesecake/"))
 =======
