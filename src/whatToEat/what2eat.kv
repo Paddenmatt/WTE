@@ -10,6 +10,7 @@
         md_bg_color: (1, 0.65, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.3}
         on_press:
+            app.reset_index()
             root.manager.current = 'option1'
             root.manager.transition.direction = "left"
 
@@ -19,6 +20,7 @@
         md_bg_color: (1, 0.45, 0, 1)
         pos_hint: {'center_x':0.5,'center_y':0.2}
         on_press:
+            app.reset_index()
             app.idk_rand()
             app.user_answers()
             root.manager.current = 'decision'

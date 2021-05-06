@@ -311,6 +311,11 @@ class What2EatApp(MDApp):
         foodList.append(Fooditem(self.addedName, self.addedType, self.addedDining, self.addedFlavor, self.addedHealth,
                         self.addedWeight, "img", "No Recipe"))
 
+    def reset_index(self):
+        self.index = 0
+        self.matchedFoodsAmount = 0
+        self.matchedFoods.clear()
+
     def build(self):
         # Create the screen manager
         sm.add_widget(StartScreen(name='start'))
