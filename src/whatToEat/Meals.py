@@ -157,7 +157,7 @@ foodList.append(Fooditem("Grilled Salmon", "dinner", "cook at home", "salty", "h
 foodList.append(Fooditem("Steak", "dinner", "cook at home", "salty", "healthy", "full", "images/steak.jpg", "https://www.allrecipes.com/recipe/258804/butchers-steak-hanger-steak/"))
 foodList.append(Fooditem("Omelette", "dinner", "cook at home", "salty", "healthy", "full", "images/omelet.jpg", "https://www.allrecipes.com/recipe/257918/chef-johns-french-omelette/"))
 foodList.append(Fooditem("Pot Roast", "dinner", "cook at home", "salty", "healthy", "full", "images/potroast.jpg", "https://www.allrecipes.com/recipe/232756/pot-roast/"))
-foodList.append(Fooditem("Meatloaf", "dinner", "cook at home", "salty", "healthy", "full", "images/meatloaf.jpg", "No Recipe"))
+foodList.append(Fooditem("Meatloaf", "dinner", "cook at home", "salty", "healthy", "full", "images/meatloaf.jpg", "https://www.allrecipes.com/recipe/268958/skinny-meatloaf/"))
 
 foodList.append(Fooditem("Fries", "dinner", "cook at home", "salty", "casual", "light", "images/fries.jpg", "https://www.allrecipes.com/recipe/35963/french-fried-potatoes/"))
 foodList.append(Fooditem("Hot Dog", "dinner", "cook at home", "salty", "casual", "light", "images/hotdog.jpg", "https://www.allrecipes.com/recipe/24713/texas-hotdog-sauce/"))
