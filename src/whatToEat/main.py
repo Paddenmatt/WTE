@@ -51,6 +51,13 @@ class CookDecisionScreen(Screen):
     userName = StringProperty()
 
 
+class ReturnScreen(Screen):
+    selection = StringProperty()
+    display = StringProperty()
+    image = StringProperty()
+    userName = StringProperty()
+
+
 class ThemeScreen(Screen):
     pass
 
@@ -286,7 +293,16 @@ class What2EatApp(MDApp):
         else:
             userName = self.name
 
-        if self.matchedFoods[self.index].dining == "cook at home":
+        if self.foodDecision == "We are out of suggestions":
+            s = ReturnScreen(name=name)
+            s.selection = selection
+            s.image = "images/return.png"
+            s.userName = userName
+            s.display = display
+            sm.add_widget(s)
+            sm.current = name
+
+        elif self.matchedFoods[self.index].dining == "cook at home":
             s = CookDecisionScreen(name=name)
             s.selection = selection
             s.image = image
@@ -294,6 +310,7 @@ class What2EatApp(MDApp):
             s.display = display
             sm.add_widget(s)
             sm.current = name
+
         else:
             s = DecisionScreen(name=name)
             s.selection = selection
@@ -309,7 +326,7 @@ class What2EatApp(MDApp):
 
     def add_new_foods(self):
         foodList.append(Fooditem(self.addedName, self.addedType, self.addedDining, self.addedFlavor, self.addedHealth,
-                        self.addedWeight, "img", "No Recipe"))
+                        self.addedWeight, "images/food.png", "No Recipe"))
 
     def reset_index(self):
         self.index = 0
@@ -324,6 +341,7 @@ class What2EatApp(MDApp):
         sm.add_widget(Option3Screen(name='option3'))
         sm.add_widget(Option4Screen(name='option4'))
         sm.add_widget(DecisionScreen(name='decision'))
+        sm.add_widget(ReturnScreen(name='decision'))
         sm.add_widget(CookDecisionScreen(name='cookDecision'))
         sm.add_widget(ThemeScreen(name='theme'))
         sm.add_widget(MealTypeScreen(name='mealType'))
