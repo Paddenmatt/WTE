@@ -325,7 +325,7 @@ class What2EatApp(MDApp):
         webbrowser.open(self.link)
 
     def add_new_foods(self):
-        foodList.append(Fooditem(self.addedName, self.addedType, self.addedDining, self.addedFlavor, self.addedHealth,
+        foodList.insert(0, Fooditem(self.addedName, self.addedType, self.addedDining, self.addedFlavor, self.addedHealth,
                         self.addedWeight, "images/food.png", "No Recipe"))
 
     def reset_index(self):
